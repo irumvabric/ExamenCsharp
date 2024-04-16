@@ -1,0 +1,12 @@
+C:\Users\Bigirimana\source\repos\EXample\EXample\Modele\bin\Debug\Modele.dll
+C:\Users\Bigirimana\source\repos\EXample\EXample\Modele\bin\Debug\Modele.pdb
+C:\Users\Bigirimana\source\repos\EXample\EXample\Modele\obj\Debug\Modele.csproj.AssemblyReference.cache
+C:\Users\Bigirimana\source\repos\EXample\EXample\Modele\obj\Debug\Modele.csproj.CoreCompileInputs.cache
+C:\Users\Bigirimana\source\repos\EXample\EXample\Modele\obj\Debug\Modele.dll
+C:\Users\Bigirimana\source\repos\EXample\EXample\Modele\obj\Debug\Modele.pdb
+C:\Users\Bigirimana\source\repos\Exam\EXample\Modele\bin\Debug\Modele.dll
+C:\Users\Bigirimana\source\repos\Exam\EXample\Modele\bin\Debug\Modele.pdb
+C:\Users\Bigirimana\source\repos\Exam\EXample\Modele\obj\Debug\Modele.csproj.AssemblyReference.cache
+C:\Users\Bigirimana\source\repos\Exam\EXample\Modele\obj\Debug\Modele.csproj.CoreCompileInputs.cache
+C:\Users\Bigirimana\source\repos\Exam\EXample\Modele\obj\Debug\Modele.dll
+C:\Users\Bigirimana\source\repos\Exam\EXample\Modele\obj\Debug\Modele.pdb
