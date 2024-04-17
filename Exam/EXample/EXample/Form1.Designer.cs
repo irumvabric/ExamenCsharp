@@ -28,169 +28,210 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.panelDashboard = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonAnnuler = new System.Windows.Forms.Button();
-            this.buttonConnexion = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.LogOut = new System.Windows.Forms.Button();
+            this.buttonHistoric = new System.Windows.Forms.Button();
+            this.buttonUser = new System.Windows.Forms.Button();
+            this.buttonReport = new System.Windows.Forms.Button();
+            this.buttonOperation = new System.Windows.Forms.Button();
+            this.DashBoard = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBoxRole = new System.Windows.Forms.ComboBox();
-            this.panelDashboard.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelMenu.SuspendLayout();
+            this.panelHeader.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
+            this.panelMenu.Controls.Add(this.LogOut);
+            this.panelMenu.Controls.Add(this.buttonHistoric);
+            this.panelMenu.Controls.Add(this.buttonUser);
+            this.panelMenu.Controls.Add(this.buttonReport);
+            this.panelMenu.Controls.Add(this.buttonOperation);
+            this.panelMenu.Controls.Add(this.DashBoard);
+            this.panelMenu.Controls.Add(this.panelHeader);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(220, 638);
+            this.panelMenu.TabIndex = 4;
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.BackColor = System.Drawing.Color.White;
+            this.panelHeader.Controls.Add(this.button1);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(220, 98);
+            this.panelHeader.TabIndex = 0;
             // 
             // panelDashboard
             // 
-            this.panelDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
-            this.panelDashboard.Controls.Add(this.panel1);
-            this.panelDashboard.Location = new System.Drawing.Point(-4, 0);
+            this.panelDashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelDashboard.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelDashboard.Location = new System.Drawing.Point(219, 0);
             this.panelDashboard.Name = "panelDashboard";
-            this.panelDashboard.Size = new System.Drawing.Size(1267, 638);
-            this.panelDashboard.TabIndex = 1;
-            this.panelDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashboard_Paint);
+            this.panelDashboard.Size = new System.Drawing.Size(1042, 638);
+            this.panelDashboard.TabIndex = 5;
+            this.panelDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashboard_Paint_1);
             // 
-            // panel1
+            // LogOut
             // 
-            this.panel1.BackColor = System.Drawing.Color.Snow;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.comboBoxRole);
-            this.panel1.Controls.Add(this.buttonAnnuler);
-            this.panel1.Controls.Add(this.buttonConnexion);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(411, 125);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 394);
-            this.panel1.TabIndex = 9;
+            this.LogOut.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogOut.FlatAppearance.BorderSize = 0;
+            this.LogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogOut.Font = new System.Drawing.Font("Neue Haas Grotesk Text Pro Blac", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogOut.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LogOut.Image = global::EXample.Properties.Resources.Open_Pane1;
+            this.LogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LogOut.Location = new System.Drawing.Point(0, 383);
+            this.LogOut.Name = "LogOut";
+            this.LogOut.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.LogOut.Size = new System.Drawing.Size(220, 57);
+            this.LogOut.TabIndex = 6;
+            this.LogOut.Text = "Log Out";
+            this.LogOut.UseVisualStyleBackColor = true;
+            this.LogOut.Click += new System.EventHandler(this.LogOut_Click);
             // 
-            // buttonAnnuler
+            // buttonHistoric
             // 
-            this.buttonAnnuler.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAnnuler.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
-            this.buttonAnnuler.FlatAppearance.BorderSize = 2;
-            this.buttonAnnuler.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAnnuler.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
-            this.buttonAnnuler.Location = new System.Drawing.Point(266, 285);
-            this.buttonAnnuler.Name = "buttonAnnuler";
-            this.buttonAnnuler.Size = new System.Drawing.Size(163, 35);
-            this.buttonAnnuler.TabIndex = 13;
-            this.buttonAnnuler.Text = "Annuler";
-            this.buttonAnnuler.UseVisualStyleBackColor = false;
+            this.buttonHistoric.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonHistoric.FlatAppearance.BorderSize = 0;
+            this.buttonHistoric.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHistoric.Font = new System.Drawing.Font("Neue Haas Grotesk Text Pro Blac", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHistoric.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonHistoric.Image = global::EXample.Properties.Resources.Graph_Report1;
+            this.buttonHistoric.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonHistoric.Location = new System.Drawing.Point(0, 326);
+            this.buttonHistoric.Name = "buttonHistoric";
+            this.buttonHistoric.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonHistoric.Size = new System.Drawing.Size(220, 57);
+            this.buttonHistoric.TabIndex = 5;
+            this.buttonHistoric.Text = "Historic";
+            this.buttonHistoric.UseVisualStyleBackColor = true;
+            this.buttonHistoric.Click += new System.EventHandler(this.buttonHistoric_Click);
             // 
-            // buttonConnexion
+            // buttonUser
             // 
-            this.buttonConnexion.BackColor = System.Drawing.Color.Transparent;
-            this.buttonConnexion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
-            this.buttonConnexion.FlatAppearance.BorderSize = 2;
-            this.buttonConnexion.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonConnexion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
-            this.buttonConnexion.Location = new System.Drawing.Point(78, 285);
-            this.buttonConnexion.Name = "buttonConnexion";
-            this.buttonConnexion.Size = new System.Drawing.Size(173, 35);
-            this.buttonConnexion.TabIndex = 12;
-            this.buttonConnexion.Text = "Connexion";
-            this.buttonConnexion.UseVisualStyleBackColor = false;
-            this.buttonConnexion.Click += new System.EventHandler(this.buttonConnexion_Click);
+            this.buttonUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonUser.FlatAppearance.BorderSize = 0;
+            this.buttonUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUser.Font = new System.Drawing.Font("Neue Haas Grotesk Text Pro Blac", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUser.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonUser.Image = global::EXample.Properties.Resources.User1;
+            this.buttonUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonUser.Location = new System.Drawing.Point(0, 269);
+            this.buttonUser.Name = "buttonUser";
+            this.buttonUser.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonUser.Size = new System.Drawing.Size(220, 57);
+            this.buttonUser.TabIndex = 4;
+            this.buttonUser.Text = "Users        ";
+            this.buttonUser.UseVisualStyleBackColor = true;
+            this.buttonUser.Click += new System.EventHandler(this.buttonUser_Click);
             // 
-            // label2
+            // buttonReport
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Javanese Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
-            this.label2.Location = new System.Drawing.Point(72, 226);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 36);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Mot de passe";
+            this.buttonReport.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonReport.FlatAppearance.BorderSize = 0;
+            this.buttonReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReport.Font = new System.Drawing.Font("Neue Haas Grotesk Text Pro Blac", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReport.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonReport.Image = global::EXample.Properties.Resources.Graph_Report1;
+            this.buttonReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonReport.Location = new System.Drawing.Point(0, 212);
+            this.buttonReport.Name = "buttonReport";
+            this.buttonReport.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonReport.Size = new System.Drawing.Size(220, 57);
+            this.buttonReport.TabIndex = 3;
+            this.buttonReport.Text = "Report      ";
+            this.buttonReport.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // buttonOperation
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Location = new System.Drawing.Point(231, 229);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(198, 25);
-            this.textBox2.TabIndex = 10;
+            this.buttonOperation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonOperation.FlatAppearance.BorderSize = 0;
+            this.buttonOperation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOperation.Font = new System.Drawing.Font("Neue Haas Grotesk Text Pro Blac", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOperation.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonOperation.Image = global::EXample.Properties.Resources.Transaction_List;
+            this.buttonOperation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonOperation.Location = new System.Drawing.Point(0, 155);
+            this.buttonOperation.Name = "buttonOperation";
+            this.buttonOperation.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonOperation.Size = new System.Drawing.Size(220, 57);
+            this.buttonOperation.TabIndex = 2;
+            this.buttonOperation.Text = "     Operation";
+            this.buttonOperation.UseVisualStyleBackColor = true;
+            this.buttonOperation.Click += new System.EventHandler(this.buttonOperation_Click);
             // 
-            // label1
+            // DashBoard
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Javanese Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
-            this.label1.Location = new System.Drawing.Point(71, 175);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 36);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Nom d\'utilisateur";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Location = new System.Drawing.Point(231, 177);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 25);
-            this.textBox1.TabIndex = 8;
+            this.DashBoard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DashBoard.FlatAppearance.BorderSize = 0;
+            this.DashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DashBoard.Font = new System.Drawing.Font("Neue Haas Grotesk Text Pro Blac", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashBoard.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.DashBoard.Image = global::EXample.Properties.Resources.Home2;
+            this.DashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DashBoard.Location = new System.Drawing.Point(0, 98);
+            this.DashBoard.Name = "DashBoard";
+            this.DashBoard.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.DashBoard.Size = new System.Drawing.Size(220, 57);
+            this.DashBoard.TabIndex = 1;
+            this.DashBoard.Text = "       Dashboard";
+            this.DashBoard.UseVisualStyleBackColor = true;
+            this.DashBoard.Click += new System.EventHandler(this.DashBoard_Click);
             // 
             // button1
             // 
+            this.button1.BackgroundImage = global::EXample.Properties.Resources.FinApp__1_1;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Neue Haas Grotesk Text Pro Blac", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Image = global::EXample.Properties.Resources.FinApp__1_;
-            this.button1.Location = new System.Drawing.Point(143, 34);
+            this.button1.Location = new System.Drawing.Point(0, 19);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(220, 57);
             this.button1.TabIndex = 7;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseMnemonic = false;
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBoxRole
-            // 
-            this.comboBoxRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxRole.FormattingEnabled = true;
-            this.comboBoxRole.Location = new System.Drawing.Point(78, 124);
-            this.comboBoxRole.Name = "comboBoxRole";
-            this.comboBoxRole.Size = new System.Drawing.Size(351, 28);
-            this.comboBoxRole.TabIndex = 11;
-            this.comboBoxRole.Text = "Select a Role ...";
-            this.comboBoxRole.SelectedIndexChanged += new System.EventHandler(this.comboBoxRole_SelectedIndexChanged);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1259, 638);
+            this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelDashboard);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panelDashboard.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
+            this.panelHeader.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonOperation;
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Button LogOut;
+        private System.Windows.Forms.Button buttonHistoric;
+        private System.Windows.Forms.Button buttonUser;
+        private System.Windows.Forms.Button buttonReport;
+        private System.Windows.Forms.Button DashBoard;
+        private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panelDashboard;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button buttonAnnuler;
-        private System.Windows.Forms.Button buttonConnexion;
-        private System.Windows.Forms.ComboBox comboBoxRole;
     }
 }
 

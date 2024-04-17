@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelHeader = new System.Windows.Forms.Panel();
-            this.panelDashboard = new System.Windows.Forms.Panel();
             this.LogOut = new System.Windows.Forms.Button();
             this.buttonHistoric = new System.Windows.Forms.Button();
             this.buttonUser = new System.Windows.Forms.Button();
             this.buttonReport = new System.Windows.Forms.Button();
             this.buttonOperation = new System.Windows.Forms.Button();
             this.DashBoard = new System.Windows.Forms.Button();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.panelDashboard = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelHeader.SuspendLayout();
             this.SuspendLayout();
@@ -57,25 +57,7 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 638);
             this.panelMenu.TabIndex = 2;
-            // 
-            // panelHeader
-            // 
-            this.panelHeader.BackColor = System.Drawing.Color.White;
-            this.panelHeader.Controls.Add(this.button1);
-            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(0, 0);
-            this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(220, 98);
-            this.panelHeader.TabIndex = 0;
-            // 
-            // panelDashboard
-            // 
-            this.panelDashboard.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panelDashboard.Location = new System.Drawing.Point(223, 0);
-            this.panelDashboard.Name = "panelDashboard";
-            this.panelDashboard.Size = new System.Drawing.Size(1067, 638);
-            this.panelDashboard.TabIndex = 3;
-            this.panelDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashboard_Paint);
+            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
             // LogOut
             // 
@@ -93,6 +75,7 @@
             this.LogOut.TabIndex = 6;
             this.LogOut.Text = "Log Out";
             this.LogOut.UseVisualStyleBackColor = true;
+            this.LogOut.Click += new System.EventHandler(this.LogOut_Click_1);
             // 
             // buttonHistoric
             // 
@@ -110,6 +93,7 @@
             this.buttonHistoric.TabIndex = 5;
             this.buttonHistoric.Text = "Historic";
             this.buttonHistoric.UseVisualStyleBackColor = true;
+            this.buttonHistoric.Click += new System.EventHandler(this.buttonHistoric_Click_1);
             // 
             // buttonUser
             // 
@@ -127,6 +111,7 @@
             this.buttonUser.TabIndex = 4;
             this.buttonUser.Text = "Users        ";
             this.buttonUser.UseVisualStyleBackColor = true;
+            this.buttonUser.Click += new System.EventHandler(this.buttonUser_Click_1);
             // 
             // buttonReport
             // 
@@ -144,6 +129,7 @@
             this.buttonReport.TabIndex = 3;
             this.buttonReport.Text = "Report      ";
             this.buttonReport.UseVisualStyleBackColor = true;
+            this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click_1);
             // 
             // buttonOperation
             // 
@@ -161,6 +147,7 @@
             this.buttonOperation.TabIndex = 2;
             this.buttonOperation.Text = "     Operation";
             this.buttonOperation.UseVisualStyleBackColor = true;
+            this.buttonOperation.Click += new System.EventHandler(this.buttonOperation_Click_1);
             // 
             // DashBoard
             // 
@@ -178,6 +165,18 @@
             this.DashBoard.TabIndex = 1;
             this.DashBoard.Text = "       Dashboard";
             this.DashBoard.UseVisualStyleBackColor = true;
+            this.DashBoard.Click += new System.EventHandler(this.DashBoard_Click_1);
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.BackColor = System.Drawing.Color.White;
+            this.panelHeader.Controls.Add(this.button1);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(220, 98);
+            this.panelHeader.TabIndex = 0;
+            this.panelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHeader_Paint);
             // 
             // button1
             // 
@@ -191,6 +190,16 @@
             this.button1.Size = new System.Drawing.Size(220, 57);
             this.button1.TabIndex = 7;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // panelDashboard
+            // 
+            this.panelDashboard.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelDashboard.Location = new System.Drawing.Point(223, 0);
+            this.panelDashboard.Name = "panelDashboard";
+            this.panelDashboard.Size = new System.Drawing.Size(1067, 638);
+            this.panelDashboard.TabIndex = 3;
+            this.panelDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashboard_Paint);
             // 
             // ucHome
             // 

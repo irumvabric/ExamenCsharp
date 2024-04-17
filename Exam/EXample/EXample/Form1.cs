@@ -19,14 +19,23 @@ namespace EXample
         private Button btnOK;
         private Random random;
         private int tempIndex;
-        ArrayList listeNomProfile = new ArrayList();
+        private ucAuthentification ucAuthentification ;
+     //   ArrayList listeNomProfile = new ArrayList();
 
         //constructor
         public Form1()
         {
             InitializeComponent();
-            listeNomProfile = Factory.ProfileName();
+        //    listeNomProfile = Factory.ProfileName();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+          //  ChatgerProfileName();
+        }
+
+        
+
 
         private void ActivateButton(object btnSender)
         {
@@ -45,7 +54,7 @@ namespace EXample
 
         private void DisableButton()
         {
-            foreach (Control previousBtn in panel1.Controls) {
+            foreach (Control previousBtn in panelMenu.Controls) {
                 if (previousBtn.GetType() == typeof(Button))
                 {
                     previousBtn.BackColor = Color.FromArgb(35, 124, 210);
@@ -96,35 +105,78 @@ namespace EXample
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            ChatgerProfileName();
-        }
-
-        void ChatgerProfileName(){
-            comboBoxRole.DataSource = listeNomProfile;
-         }
-
+       
         private void buttonConnexion_Click(object sender, EventArgs e)
         {
-            string username = textBox1.Text;
-            string pass = textBox2.Text;
-            if (Factory.Connexion(username,pass) == true)
-            {
-                this.panelDashboard.Controls.Clear();
-                ucHome ucHome = new ucHome();
-                this.panelDashboard.Controls.Add(ucHome);
-
-            }
-            else
-            {
-                MessageBox.Show("Your inputs are not correct");
-            }
+            
         }
 
         private void comboBoxRole_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DashBoard_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void buttonOperation_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+
+        private void panelDashboard_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DashBoard_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucBanque banque = new ucBanque();
+            this.panelDashboard.Controls.Add(banque);
+        }
+
+        private void buttonOperation_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucOperation op1 = new ucOperation();
+            this.panelDashboard.Controls.Add(op1);
+        }
+
+        private void buttonUser_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucUtilisateur util1 = new ucUtilisateur();
+            this.panelDashboard.Controls.Add(util1);
+        }
+
+        private void LogOut_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucAuthentification auth = new ucAuthentification();
+            this.Hide();
+            auth.Show();
+        }
+
+        private void buttonHistoric_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucProfile pro = new ucProfile();
+            this.panelDashboard.Controls.Add(pro);
         }
     }
 }

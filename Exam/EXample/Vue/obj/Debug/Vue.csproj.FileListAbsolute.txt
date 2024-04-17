@@ -49,3 +49,7 @@ C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.csproj.Up2Date
 C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucBanque.resources
 C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucProfile.resources
 C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucHome.resources
+C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucOperation.resources
+C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucTitleCompte.resources
+C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucUser.resources
+C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucUtilisateur.resources

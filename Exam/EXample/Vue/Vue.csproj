@@ -71,6 +71,12 @@
     <Compile Include="ucHome.Designer.cs">
       <DependentUpon>ucHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucOperation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOperation.Designer.cs">
+      <DependentUpon>ucOperation.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -96,6 +102,24 @@
     <Compile Include="ucMateriel.Designer.cs">
       <DependentUpon>ucMateriel.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucTitleCompte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTitleCompte.Designer.cs">
+      <DependentUpon>ucTitleCompte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUser.Designer.cs">
+      <DependentUpon>ucUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUtilisateur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUtilisateur.Designer.cs">
+      <DependentUpon>ucUtilisateur.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -117,6 +141,9 @@
     <EmbeddedResource Include="ucMateriel.resx">
       <DependentUpon>ucMateriel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucOperation.resx">
+      <DependentUpon>ucOperation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucProfile.resx">
       <DependentUpon>ucProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +152,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucTechnicien.resx">
       <DependentUpon>ucTechnicien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTitleCompte.resx">
+      <DependentUpon>ucTitleCompte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUser.resx">
+      <DependentUpon>ucUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUtilisateur.resx">
+      <DependentUpon>ucUtilisateur.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

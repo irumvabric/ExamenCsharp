@@ -12,14 +12,13 @@ using MySql.Data.MySqlClient.Memcached;
 
 namespace Controlleur
 {
-    public class Factory
+    public static class Factory
     {
-        static MySqlConnection conn = null;
+        public static MySqlConnection conn = null;
 
-        static Modele.Client client = null;
-        static Modele.Techniciens technicien = null;
-        static Modele.Materiel mater = null;
-        static Modele.Reparation repar1 = null;
+
+        public static  utilisateur user1 = null;
+        public static  Profile profile1 = null;
 
 
         public static void initialiserConn()
@@ -30,19 +29,19 @@ namespace Controlleur
         }
 
 
-        #region
+        #region Utilisateur
 
         public static Boolean Connexion(string username, string password)
         {
             initialiserConn();
             if (conn.State != ConnectionState.Open) conn.Open();
 
-            Modele.utilisateur util1 = null;
+             utilisateur util1 = null;
 
 
             MySqlCommand command = conn.CreateCommand();
 
-            command.CommandText = "SELECT * FROM utilisateur WHERE username = @user AND motDePasse = @password";
+            command.CommandText = "SELECT username,motDePasse FROM utilisateur WHERE username = @user AND motDePasse = @password";
 
             command.Parameters.Add(new MySqlParameter("@user", username));
             command.Parameters.Add(new MySqlParameter("@password", password));
@@ -64,11 +63,11 @@ namespace Controlleur
                 }
                 catch (Exception ex)
                 {
-
+                    
                     utilReader.Close();
                     conn.Close();
                     throw ex;
-
+                   
                 }
 
             }
@@ -86,55 +85,50 @@ namespace Controlleur
             if (conn.State != ConnectionState.Open) conn.Open();
 
             MySqlCommand commande = conn.CreateCommand();
-            commande.CommandText = "select prof.nom FROM utilisateur AS util "+ 
-                                    "JOIN Profile AS prof ON util.idProfille = prof.id";
+            commande.CommandText = "select prof.idProfile FROM utilisateur AS util "+ 
+                                    "JOIN Profile AS prof ON util.idProfille = prof.idProfile";
             MySqlDataReader utilReader = commande.ExecuteReader();
             while (utilReader.Read())
             {
-                prof.Nom= utilReader["nom"].ToString();
-                user.Add(client);
+                prof.Nom= utilReader["idProfile"].ToString();
+                user.Add(prof);
             }
             utilReader.Close();
             conn.Close();
             return user;
         }
-        #endregion
-        /*
-
-        #region Client
-
-        public static ArrayList getAllClients() {
+        public static ArrayList getAllUsers() {
         
-            ArrayList clients = new ArrayList();
-
-            
+            ArrayList utilisateur = new ArrayList();
 
             initialiserConn();
 
             if (conn.State != ConnectionState.Open) conn.Open();
 
             MySqlCommand commande = conn.CreateCommand();
-            commande.CommandText = "select * from client";
-            MySqlDataReader ClientReader = commande.ExecuteReader();
-            while (ClientReader.Read())
+            commande.CommandText = "select * from utilisateur";
+            MySqlDataReader userReader = commande.ExecuteReader();
+            while (userReader.Read())
             {
-                client = new Modele.Client();
+                user1 = new  utilisateur();
 
-                client.Matricule = ClientReader["idClient"].ToString();
-                client.Nom = ClientReader["nom"].ToString();
-                client.Genre = ClientReader["genre"].ToString();
-                client.Telephone = ClientReader["tel"].ToString();
-                client.Email = ClientReader["email"].ToString();
-                client.Nationalite = ClientReader["nationalite"].ToString();
-                clients.Add(client);
+                user1.IdUtilisateur = userReader["idUtilisateur"].ToString();
+                user1.Nom = userReader["nom"].ToString();
+                user1.Prenom = userReader["prenom"].ToString();
+                user1.Username = userReader["username"].ToString();
+                user1.IdUtilisateur = userReader["motDePasse"].ToString();
+                user1.NomProfile = userReader["idProfille"].ToString();
+
+
+                utilisateur.Add(user1);
             }
-            ClientReader.Close();
+            userReader.Close();
             conn.Close();
-            return clients;
+            return utilisateur;
         }
         //   public static Clients getClientByID() { return null; }
 
-        public static Modele.Client addClients(Modele.Client cl1) 
+        public static  utilisateur addUtilisateur( utilisateur user1) 
         {
             initialiserConn();
             if (conn.State != ConnectionState.Open) conn.Open();
@@ -143,14 +137,14 @@ namespace Controlleur
             {
                 MySqlCommand command = conn.CreateCommand();
 
-                command.CommandText = "INSERT INTO client(idClient,nom,genre,tel,email,nationalite) VALUES(@id, @no, @ge,@tel, @email, @not)";
+                command.CommandText = "INSERT INTO utilisateur(idUtilisateur,nom,prenom,username,motDePasse,idProfille) VALUES(@idUt, @no,@pre, @user,@pass, @idProfile)";
 
-                command.Parameters.Add(new MySqlParameter("@id", cl1.Matricule));
-                command.Parameters.Add(new MySqlParameter("@no", cl1.Nom));
-                command.Parameters.Add(new MySqlParameter("@ge", cl1.Genre));
-                command.Parameters.Add(new MySqlParameter("@tel", cl1.Telephone));
-                command.Parameters.Add(new MySqlParameter("@email", cl1.Email));
-                command.Parameters.Add(new MySqlParameter("@not", cl1.Nationalite));
+                command.Parameters.Add(new MySqlParameter("@idUt", user1.IdUtilisateur));
+                command.Parameters.Add(new MySqlParameter("@no", user1.Nom));
+                command.Parameters.Add(new MySqlParameter("@pre", user1.Prenom));
+                command.Parameters.Add(new MySqlParameter("@user", user1.Username));
+                command.Parameters.Add(new MySqlParameter("@pass", user1.Password));
+                command.Parameters.Add(new MySqlParameter("@idProfile", user1.NomProfile));
 
                 command.ExecuteNonQuery();
                 conn.Close();
@@ -160,40 +154,39 @@ namespace Controlleur
             {
                 throw ex;
             }
-            return cl1;
+            return user1;
         }
 
-        public static Modele.Client getIdByClient(string idClient)
+        public static  utilisateur getIdByUtilisateur(string idClient)
         {
             initialiserConn();
             if (conn.State != ConnectionState.Open) conn.Open();
 
-                Modele.Client cl2 = null;
+                 utilisateur user2 = null;
 
-           
                 MySqlCommand command = conn.CreateCommand();
 
-                command.CommandText = "SELECT * FROM client WHERE idClient = @id";
+                command.CommandText = "SELECT * FROM utilisateur WHERE idUtilisateur = @id";
 
                 command.Parameters.Add(new MySqlParameter("@id", idClient));
 
-                MySqlDataReader ClientReader = command.ExecuteReader();
+                MySqlDataReader utilisateurReader = command.ExecuteReader();
                 try
                 {
 
-                    if (ClientReader.Read())
+                    if (utilisateurReader.Read())
                     {
-                    cl2 = new Modele.Client();
+                        user2 = new  utilisateur();
 
-                    cl2.Matricule = ClientReader["idClient"].ToString();
-                    cl2.Nom = ClientReader["nom"].ToString();
-                    cl2.Genre = ClientReader["genre"].ToString();
-                    cl2.Telephone = ClientReader["tel"].ToString();
-                    cl2.Email = ClientReader["email"].ToString();
-                    cl2.Nationalite = ClientReader["nationalite"].ToString();
+                        user2.IdUtilisateur = utilisateurReader["idUtilisateur"].ToString();
+                        user2.Nom = utilisateurReader["nom"].ToString();
+                        user2.Prenom = utilisateurReader["prenom"].ToString();
+                        user2.Username = utilisateurReader["username"].ToString();
+                        user2.IdUtilisateur = utilisateurReader["motDePasse"].ToString();
+                        user2.NomProfile = utilisateurReader["idProfille"].ToString();
 
-                    }
-                    ClientReader.Close();
+                }
+                utilisateurReader.Close();
 
                     command.ExecuteNonQuery();
                     conn.Close();
@@ -201,31 +194,31 @@ namespace Controlleur
                 }
                 catch (Exception ex)
                 {
-                    ClientReader.Close();
+                    utilisateurReader.Close();
                     conn.Close();
                     throw ex;
                     
                 }
-                return cl2;
+                return user2;
             
             
         }
         
 
-        public static void supprimerClient(Modele.Client cl1)
+        public static void supprimerutilisateur(utilisateur user1)
         {
             initialiserConn();
             if (conn.State != ConnectionState.Open) conn.Open();
 
-          //  Modele.Client cl1 = null;
+          //   Client cl1 = null;
 
             try
             {
                 MySqlCommand command = conn.CreateCommand();
 
-                command.CommandText = "DELETE FROM client WHERE idClient = @id";
+                command.CommandText = "DELETE FROM utilisateur WHERE idUtilisateur = @id";
 
-                command.Parameters.Add(new MySqlParameter("@id", cl1.Matricule));
+                command.Parameters.Add(new MySqlParameter("@id", user1.IdUtilisateur));
 
                 command.ExecuteNonQuery();
                 conn.Close();
@@ -239,7 +232,7 @@ namespace Controlleur
             
         }
 
-        public static Modele.Client updateClients(Modele.Client cl1)
+        public static utilisateur updateUtilisateurs( utilisateur user1)
         {
             initialiserConn();
             if (conn.State != ConnectionState.Open) conn.Open();
@@ -248,14 +241,14 @@ namespace Controlleur
             {
                 MySqlCommand command = conn.CreateCommand();
 
-                command.CommandText = "UPDATE client SET nom = @no ,genre = @ge ,tel = @tel ,email = @email ,nationalite = @no  WHERE idClient = @id";
+                command.CommandText = "UPDATE utilisateur SET nom = @no ,prenom = @pre, username = @user, motDePasse = @pass, idProfille = @idProfile WHERE idUtilisateur = @idUt";
 
-                command.Parameters.Add(new MySqlParameter("@id", cl1.Matricule));
-                command.Parameters.Add(new MySqlParameter("@no", cl1.Nom));
-                command.Parameters.Add(new MySqlParameter("@ge", cl1.Genre));
-                command.Parameters.Add(new MySqlParameter("@tel", cl1.Telephone));
-                command.Parameters.Add(new MySqlParameter("@email", cl1.Email));
-                command.Parameters.Add(new MySqlParameter("@not", cl1.Nationalite));
+                command.Parameters.Add(new MySqlParameter("@idUt", user1.IdUtilisateur));
+                command.Parameters.Add(new MySqlParameter("@no", user1.Nom));
+                command.Parameters.Add(new MySqlParameter("@pre", user1.Prenom));
+                command.Parameters.Add(new MySqlParameter("@user", user1.Username));
+                command.Parameters.Add(new MySqlParameter("@pass", user1.Password));
+                command.Parameters.Add(new MySqlParameter("@idProfile", user1.NomProfile));
 
                 command.ExecuteNonQuery();
                 conn.Close();
@@ -265,17 +258,19 @@ namespace Controlleur
             {
                 throw ex;
             }
-            return cl1;
+            return user1;
         }
+
+
         #endregion
 
-        #region Technitien
+        #region Profile
 
 
-        public static ArrayList getAlltechniciens()
+        public static ArrayList getAllProfiles()
         {
 
-            ArrayList techniciens = new ArrayList();
+            ArrayList profiles = new ArrayList();
 
             
 
@@ -284,30 +279,25 @@ namespace Controlleur
             if (conn.State != ConnectionState.Open) conn.Open();
 
             MySqlCommand commande = conn.CreateCommand();
-            commande.CommandText = "select * from techniciens";
-            MySqlDataReader techniciensReader = commande.ExecuteReader();
-            while (techniciensReader.Read())
+            commande.CommandText = "select * from profile";
+            MySqlDataReader profilesReader = commande.ExecuteReader();
+            while (profilesReader.Read())
             {
-                technicien = new Modele.Techniciens();
+                profile1 = new  Profile();
 
-                technicien.Matricule = techniciensReader["matricule"].ToString();
-                technicien.Nom = techniciensReader["nom"].ToString();
-                technicien.Genre = techniciensReader["genre"].ToString();
-                technicien.Telephone = techniciensReader["telephone"].ToString();
-                technicien.Email = techniciensReader["email"].ToString();
-                technicien.Nationalite = techniciensReader["nationalite"].ToString();
-                technicien.DateEmbauche = DateTime.Parse(techniciensReader["dateEmbauche"].ToString());
-                technicien.DateNaiss = DateTime.Parse(techniciensReader["dateNaissance"].ToString());
-                technicien.Diplome = techniciensReader["diplome"].ToString();
-                techniciens.Add(technicien);
+                profile1.Id = profilesReader["idProfile"].ToString();
+                profile1.Nom = profilesReader["nom"].ToString();
+                profile1.Salaire = int.Parse(profilesReader["Salaire"].ToString());
+
+                profiles.Add(profile1);
             }
-            techniciensReader.Close();
+            profilesReader.Close();
             conn.Close();
-            return techniciens;
+            return profiles;
         }
         //   public static Clients getClientByID() { return null; }
 
-        public static Modele.Techniciens addTechniciens(Modele.Techniciens technicien)
+        public static  Profile addProfiles(Profile Profile1)
         {
             initialiserConn();
             if (conn.State != ConnectionState.Open) conn.Open();
@@ -316,17 +306,13 @@ namespace Controlleur
             {
                 MySqlCommand command = conn.CreateCommand();
 
-                command.CommandText = "INSERT INTO techniciens(matricule,nom,genre,telephone,email,nationalite,dateNaissance,dateEmbauche,diplome) VALUES(@id, @no, @ge,@tel, @email, @not,@dN,@dE,@dipl)";
+                command.CommandText = "INSERT INTO profile(idProfile,nom,Salaire,privileges) VALUES(@id, @no, @sal,@priv)";
 
-                command.Parameters.Add(new MySqlParameter("@id", technicien.Matricule));
-                command.Parameters.Add(new MySqlParameter("@no", technicien.Nom));
-                command.Parameters.Add(new MySqlParameter("@ge", technicien.Genre));
-                command.Parameters.Add(new MySqlParameter("@tel", technicien.Telephone));
-                command.Parameters.Add(new MySqlParameter("@email", technicien.Email));
-                command.Parameters.Add(new MySqlParameter("@not", technicien.Nationalite));
-                command.Parameters.Add(new MySqlParameter("@dN", technicien.DateNaiss));
-                command.Parameters.Add(new MySqlParameter("@dE", technicien.DateEmbauche));
-                command.Parameters.Add(new MySqlParameter("@dipl", technicien.Diplome));
+                command.Parameters.Add(new MySqlParameter("@id", Profile1.Id));
+                command.Parameters.Add(new MySqlParameter("@no", Profile1.Nom));
+                command.Parameters.Add(new MySqlParameter("@sal", Profile1.Salaire));
+                command.Parameters.Add(new MySqlParameter("@priv", Profile1.Privilege));
+                
 
                 command.ExecuteNonQuery();
                 conn.Close();
@@ -336,10 +322,10 @@ namespace Controlleur
             {
                 throw ex;
             }
-            return technicien;
+            return Profile1;
         }
 
-        public static Modele.Techniciens getIdByTech(string idTech)
+        public static  Profile getIdByProfile(string idProfile)
         {
             initialiserConn();
             if (conn.State != ConnectionState.Open) conn.Open();
@@ -350,27 +336,23 @@ namespace Controlleur
             {
                 MySqlCommand command = conn.CreateCommand();
 
-                command.CommandText = "select * from techniciens WHERE matricule = @id";
+                command.CommandText = "select * from profile WHERE idProfile = @id";
 
-                command.Parameters.Add(new MySqlParameter("@id", idTech));
+                command.Parameters.Add(new MySqlParameter("@id", idProfile));
 
-                MySqlDataReader techniciensReader = command.ExecuteReader();
-                if (techniciensReader.Read())
+                MySqlDataReader profilesReader = command.ExecuteReader();
+                if (profilesReader.Read())
                 {
-                    technicien = new Modele.Techniciens();
+                    profile1 = new  Profile();
 
-                    technicien.Matricule = techniciensReader["matricule"].ToString();
-                    technicien.Nom = techniciensReader["nom"].ToString();
-                    technicien.Genre = techniciensReader["genre"].ToString();
-                    technicien.Telephone = techniciensReader["telephone"].ToString();
-                    technicien.Email = techniciensReader["email"].ToString();
-                    technicien.Nationalite = techniciensReader["nationalite"].ToString();
-                    technicien.DateEmbauche = DateTime.Parse(techniciensReader["dateEmbauche"].ToString());
-                    technicien.DateNaiss = DateTime.Parse(techniciensReader["dateNaissance"].ToString());
-                    technicien.Diplome = techniciensReader["diplome"].ToString();
+                    profile1.Id = profilesReader["idProfile"].ToString();
+                    profile1.Nom = profilesReader["nom"].ToString();
+                    profile1.Salaire = int.Parse(profilesReader["Salaire"].ToString());
+                    profile1.Privilege = profilesReader["telephone"].ToString();
+
 
                 }
-                techniciensReader.Close();
+                profilesReader.Close();
 
                 command.ExecuteNonQuery();
 
@@ -384,11 +366,11 @@ namespace Controlleur
                 conn.Close();
                 throw ex;
             }
-            return technicien;
+            return profile1;
         }
 
 
-        public static void supprimerTechnicien(Techniciens technicien)
+        public static void supprimerprofile(Profile profile1)
         {
             initialiserConn();
             if (conn.State != ConnectionState.Open) conn.Open();
@@ -397,9 +379,9 @@ namespace Controlleur
             {
                 MySqlCommand command = conn.CreateCommand();
 
-                command.CommandText = "DELETE FROM techniciens WHERE matricule = @id";
+                command.CommandText = "DELETE FROM profile WHERE idProfile = @id";
 
-                command.Parameters.Add(new MySqlParameter("@id", technicien.Matricule));
+                command.Parameters.Add(new MySqlParameter("@id", profile1.Id));
                 command.ExecuteNonQuery();
                 conn.Close();
 
@@ -411,7 +393,7 @@ namespace Controlleur
             
         }
 
-        public static Modele.Techniciens updateTechnicien(Modele.Techniciens technicien)
+        public static  Profile updateProfile( Profile profile1)
         {
             initialiserConn();
             if (conn.State != ConnectionState.Open) conn.Open();
@@ -420,17 +402,11 @@ namespace Controlleur
             {
                 MySqlCommand command = conn.CreateCommand();
 
-                command.CommandText = "UPDATE techniciens SET nom = @no ,genre = @ge ,telephone = @tel ,email = @email ,nationalite = @no,dateNaissance = @dN ,dateEmbauche = @dE,diplome = @dipl WHERE matricule = @id";
+                command.CommandText = "UPDATE profile SET nom = @no ,Salaire = @ge ,telephone = @tel ,email = @email ,nationalite = @no,dateNaissance = @dN ,dateEmbauche = @dE,diplome = @dipl WHERE matricule = @id";
 
-                command.Parameters.Add(new MySqlParameter("@id", technicien.Matricule));
-                command.Parameters.Add(new MySqlParameter("@no", technicien.Nom));
-                command.Parameters.Add(new MySqlParameter("@ge", technicien.Genre));
-                command.Parameters.Add(new MySqlParameter("@tel", technicien.Telephone));
-                command.Parameters.Add(new MySqlParameter("@email", technicien.Email));
-                command.Parameters.Add(new MySqlParameter("@not", technicien.Nationalite));
-                command.Parameters.Add(new MySqlParameter("@dN", technicien.DateNaiss));
-                command.Parameters.Add(new MySqlParameter("@dE", technicien.DateEmbauche));
-                command.Parameters.Add(new MySqlParameter("@dipl", technicien.Diplome));
+                command.Parameters.Add(new MySqlParameter("@no", profile1.Nom));
+                command.Parameters.Add(new MySqlParameter("@sal", profile1.Salaire));
+                command.Parameters.Add(new MySqlParameter("@priv", profile1.Privilege));
 
                 command.ExecuteNonQuery();
                 conn.Close();
@@ -440,364 +416,365 @@ namespace Controlleur
             {
                 throw ex;
             }
-            return technicien;
+            return profile1;
         }
 
         #endregion
 
-        #region Materiel
-
-
-        public static ArrayList getAllMateriel()
-        {
-
-            ArrayList materiels = new ArrayList();
-
-            initialiserConn();
-
-            if (conn.State != ConnectionState.Open) conn.Open();
-
-            MySqlCommand commande = conn.CreateCommand();
-            commande.CommandText = "SELECT * FROM materiel";
-            MySqlDataReader materielReader = commande.ExecuteReader();
-            while (materielReader.Read())
-            {
-                mater = new Modele.Materiel();
-
-                mater.Idmat = materielReader["idMat"].ToString();
-                mater.Nom = materielReader["nom"].ToString();
-                mater.NumeroSerie = materielReader["serie"].ToString();
-                mater.Marque = materielReader["marque"].ToString();
-                mater.Photo = materielReader["photo"] as byte[];
-                mater.Commentaire = materielReader["commentaire"].ToString();
-                mater.IdClient = materielReader["IdClient"].ToString();
-                materiels.Add(mater);
-            }
-            materielReader.Close();
-            conn.Close();
-            return materiels;
-        }
-        //   public static Clients getClientByID() { return null; }
-
-        public static Modele.Materiel addMateriel(Modele.Materiel mater)
-        {
-            initialiserConn();
-            if (conn.State != ConnectionState.Open) conn.Open();
-
-            try
-            {
-                MySqlCommand command = conn.CreateCommand();
-
-                command.CommandText = "INSERT INTO materiel(idMat,nom,serie,marque,photo,commentaire,idClient) VALUES(@id, @no, @se,@mar, @photo, @com,@idCl)";
-
-                command.Parameters.Add(new MySqlParameter("@id", mater.Idmat));
-                command.Parameters.Add(new MySqlParameter("@no", mater.Nom));
-                command.Parameters.Add(new MySqlParameter("@se", mater.NumeroSerie));
-                command.Parameters.Add(new MySqlParameter("@mar", mater.Marque));
-                command.Parameters.Add(new MySqlParameter("@photo", mater.Photo));
-                command.Parameters.Add(new MySqlParameter("@com", mater.Commentaire));
-                command.Parameters.Add(new MySqlParameter("@idCl", mater.IdClient));
-
-                command.ExecuteNonQuery();
-                conn.Close();
-
-            }
-            catch (Exception ex)
-            {
-                conn.Close();
-                throw ex;
-            }
-            return mater;
-        }
-
-        public static Modele.Materiel getIdByMateriel(string idMater)
-        {
-            initialiserConn();
-            if (conn.State != ConnectionState.Open) conn.Open();
-
-            try
-            {
-                MySqlCommand command = conn.CreateCommand();
-
-                command.CommandText = "SELECT * FROM client WHERE idClient = @id";
-
-                command.Parameters.Add(new MySqlParameter("@id", idMater));
-
-                MySqlDataReader materielReader = command.ExecuteReader();
-                if (materielReader.Read())
-                {
-                    mater = new Modele.Materiel();
-
-                    mater.Idmat = materielReader["idmater"].ToString();
-                    mater.Nom = materielReader["nom"].ToString();
-                    mater.NumeroSerie = materielReader["serie"].ToString();
-                    mater.Marque = materielReader["marque"].ToString();
-                    mater.Photo = materielReader["photo"] as byte[];
-                    mater.Commentaire = materielReader["commentaire"].ToString();
-
-                }
-                materielReader.Close();
+        /*
+       #region Materiel
+
+
+       public static ArrayList getAllMateriel()
+       {
+
+           ArrayList materiels = new ArrayList();
+
+           initialiserConn();
+
+           if (conn.State != ConnectionState.Open) conn.Open();
+
+           MySqlCommand commande = conn.CreateCommand();
+           commande.CommandText = "SELECT * FROM materiel";
+           MySqlDataReader materielReader = commande.ExecuteReader();
+           while (materielReader.Read())
+           {
+               mater = new  Materiel();
+
+               mater.Idmat = materielReader["idMat"].ToString();
+               mater.Nom = materielReader["nom"].ToString();
+               mater.NumeroSerie = materielReader["serie"].ToString();
+               mater.Marque = materielReader["marque"].ToString();
+               mater.Photo = materielReader["photo"] as byte[];
+               mater.Commentaire = materielReader["commentaire"].ToString();
+               mater.IdClient = materielReader["IdClient"].ToString();
+               materiels.Add(mater);
+           }
+           materielReader.Close();
+           conn.Close();
+           return materiels;
+       }
+       //   public static Clients getClientByID() { return null; }
+
+       public static  Materiel addMateriel( Materiel mater)
+       {
+           initialiserConn();
+           if (conn.State != ConnectionState.Open) conn.Open();
+
+           try
+           {
+               MySqlCommand command = conn.CreateCommand();
+
+               command.CommandText = "INSERT INTO materiel(idMat,nom,serie,marque,photo,commentaire,idClient) VALUES(@id, @no, @se,@mar, @photo, @com,@idCl)";
+
+               command.Parameters.Add(new MySqlParameter("@id", mater.Idmat));
+               command.Parameters.Add(new MySqlParameter("@no", mater.Nom));
+               command.Parameters.Add(new MySqlParameter("@se", mater.NumeroSerie));
+               command.Parameters.Add(new MySqlParameter("@mar", mater.Marque));
+               command.Parameters.Add(new MySqlParameter("@photo", mater.Photo));
+               command.Parameters.Add(new MySqlParameter("@com", mater.Commentaire));
+               command.Parameters.Add(new MySqlParameter("@idCl", mater.IdClient));
+
+               command.ExecuteNonQuery();
+               conn.Close();
+
+           }
+           catch (Exception ex)
+           {
+               conn.Close();
+               throw ex;
+           }
+           return mater;
+       }
+
+       public static  Materiel getIdByMateriel(string idMater)
+       {
+           initialiserConn();
+           if (conn.State != ConnectionState.Open) conn.Open();
+
+           try
+           {
+               MySqlCommand command = conn.CreateCommand();
+
+               command.CommandText = "SELECT * FROM client WHERE idClient = @id";
+
+               command.Parameters.Add(new MySqlParameter("@id", idMater));
+
+               MySqlDataReader materielReader = command.ExecuteReader();
+               if (materielReader.Read())
+               {
+                   mater = new  Materiel();
+
+                   mater.Idmat = materielReader["idmater"].ToString();
+                   mater.Nom = materielReader["nom"].ToString();
+                   mater.NumeroSerie = materielReader["serie"].ToString();
+                   mater.Marque = materielReader["marque"].ToString();
+                   mater.Photo = materielReader["photo"] as byte[];
+                   mater.Commentaire = materielReader["commentaire"].ToString();
 
-                command.ExecuteNonQuery();
-                conn.Close();
-
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return mater;
-        }
+               }
+               materielReader.Close();
 
+               command.ExecuteNonQuery();
+               conn.Close();
 
-        public static void supprimerMateriel(Materiel mater1)
-        {
-            initialiserConn();
-            if (conn.State != ConnectionState.Open) conn.Open();
-
-           
-
-            try
-            {
-                MySqlCommand command = conn.CreateCommand();
-
-                command.CommandText = "DELETE FROM materiel WHERE idMat = @id";
-
-                command.Parameters.Add(new MySqlParameter("@id", mater1.Idmat));
-
-                MySqlDataReader materielReader = command.ExecuteReader();
-                if (materielReader.Read())
-                {
-                    mater = new Modele.Materiel();  
+           }
+           catch (Exception ex)
+           {
+               throw ex;
+           }
+           return mater;
+       }
 
-                    mater.Idmat = materielReader["idmater"].ToString();
-                    mater.Nom = materielReader["nom"].ToString();
-                    mater.NumeroSerie = materielReader["serie"].ToString();
-                    mater.Marque = materielReader["marque"].ToString();
-                    mater.Photo = materielReader["photo"] as byte[];
-                    mater.Commentaire = materielReader["commentaire"].ToString();
-
-                }
-                materielReader.Close();
-
-                command.ExecuteNonQuery();
-                conn.Close();
-
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-           
-        }
-
-        public static Modele.Materiel updateMateriel(Modele.Materiel mater)
-        {
-            initialiserConn();
-            if (conn.State != ConnectionState.Open) conn.Open();
-
-            try
-            {
-                MySqlCommand command = conn.CreateCommand();
-
-                command.CommandText = "UPDATE materiel SET nom = @no,serie = @se,marque = @mar,photo = @photo,commentaire = @com , idClient = @idCli WHERE idMat = @id";
-
-                command.Parameters.Add(new MySqlParameter("@id", mater.Idmat));
-                command.Parameters.Add(new MySqlParameter("@no", mater.Nom));
-                command.Parameters.Add(new MySqlParameter("@se", mater.NumeroSerie));
-                command.Parameters.Add(new MySqlParameter("@mar", mater.Marque));
-                command.Parameters.Add(new MySqlParameter("@photo", mater.Photo));
-                command.Parameters.Add(new MySqlParameter("@com", mater.Commentaire));
-                command.Parameters.Add(new MySqlParameter("@idCli", mater.IdClient));
-
-                command.ExecuteNonQuery();
-                conn.Close();
-
-            }
-            catch (Exception ex)
-            {
-                conn.Close();
-                throw ex;
-            }
-            return mater;
-        }
-
-        #endregion
-
-
-        #region Reparation
-
-
-        public static ArrayList getAllReparation()
-        {
-
-            ArrayList reparations = new ArrayList();
-
-            initialiserConn();
-
-            if (conn.State != ConnectionState.Open) conn.Open();
-
-            MySqlCommand commande = conn.CreateCommand();
-            commande.CommandText = "SELECT * FROM reparation";
-            MySqlDataReader reparationReader = commande.ExecuteReader();
-            while (reparationReader.Read())
-            {
-                repar1 = new Modele.Reparation();
 
-               
-                repar1.Cout = int.Parse(reparationReader["cout"].ToString());
-                repar1.Panne = reparationReader["panne"].ToString();
-                repar1.Date = DateTime.Parse(reparationReader["date"].ToString());
-                repar1.IdMateriel = reparationReader["idMat"].ToString();
-                repar1.IdClient = reparationReader["idClient"].ToString();
-                reparations.Add(repar1);
-            }
-            reparationReader.Close();
-            conn.Close();
-            return reparations;
-        }
-        //   public static Clients getClientByID() { return null; }
+       public static void supprimerMateriel(Materiel mater1)
+       {
+           initialiserConn();
+           if (conn.State != ConnectionState.Open) conn.Open();
 
-        public static Modele.Reparation addReparation(Modele.Reparation repar1)
-        {
-            initialiserConn();
-            if (conn.State != ConnectionState.Open) conn.Open();
-
-            try
-            {
-                MySqlCommand command = conn.CreateCommand();
-
-                command.CommandText = "INSERT INTO reparation(date,panne,cout,idMat,idClient) VALUES(@date, @panne,@cout, @idMat,@idCl)";
 
-                
-                command.Parameters.Add(new MySqlParameter("@date", repar1.Date));
-                command.Parameters.Add(new MySqlParameter("@panne", repar1.Panne));
-                command.Parameters.Add(new MySqlParameter("@cout", repar1.Cout));
-                command.Parameters.Add(new MySqlParameter("@idMat", repar1.IdMateriel));
-                command.Parameters.Add(new MySqlParameter("@idCl", repar1.IdClient));
-
-                command.ExecuteNonQuery();
-                conn.Close();
-
-            }
-            catch (Exception ex)
-            {
-                conn.Close();
-                throw ex;
-            }
-            return repar1;
-        }
 
-        public static Modele.Reparation getIdByReparation(string idMater, string idClient)
-        {
-            initialiserConn();
-            if (conn.State != ConnectionState.Open) conn.Open();
+           try
+           {
+               MySqlCommand command = conn.CreateCommand();
 
-            try
-            {
-                MySqlCommand command = conn.CreateCommand();
-
-                command.CommandText = "SELECT * FROM reparation WHERE idClient = @idClient AND idMat = @idMat";
-
-                command.Parameters.Add(new MySqlParameter("@idClient", idMater));
-                command.Parameters.Add(new MySqlParameter("@idMat", idClient));
-
-                MySqlDataReader reparationReader = command.ExecuteReader();
-                if (reparationReader.Read())
-                {
-                    repar1 = new Modele.Reparation();
-
-                    repar1.Cout = int.Parse(reparationReader["cout"].ToString());
-                    repar1.Panne = reparationReader["panne"].ToString();
-                    repar1.Date = DateTime.Parse(reparationReader["date"].ToString());
-                    repar1.IdMateriel = reparationReader["idMat"].ToString();
-                    repar1.IdClient = reparationReader["idClient"].ToString();
-
-                }
-                reparationReader.Close();
-
-                command.ExecuteNonQuery();
-                conn.Close();
-
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return repar1;
-        }
-
-
-        public static void supprimerReparation(Modele.Reparation repar1)
-        {
-            initialiserConn();
-            if (conn.State != ConnectionState.Open) conn.Open();
-
-
-
-            try
-            {
-                MySqlCommand command = conn.CreateCommand();
-
-                command.CommandText = "DELETE FROM reparation WHERE idMat = @id AND idMat = @idMat";
-
-                command.Parameters.Add(new MySqlParameter("@id", repar1.IdMateriel));
-
-                MySqlDataReader reparationReader = command.ExecuteReader();
-                if (reparationReader.Read())
-                {
-                    repar1 = new Modele.Reparation();
-
-                    repar1.Cout = int.Parse(reparationReader["cout"].ToString());
-                    repar1.Panne = reparationReader["panne"].ToString();
-                    repar1.Date = DateTime.Parse(reparationReader["date"].ToString());
-                    repar1.IdMateriel = reparationReader["idMat"].ToString();
-                    repar1.IdClient = reparationReader["idClient"].ToString();
-
-                }
-                reparationReader.Close();
-
-                command.ExecuteNonQuery();
-                conn.Close();
-
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-        }
-
-        public static Modele.Reparation updateReparation(Modele.Reparation repa1,string idMat,string idClient)
-        {
-            initialiserConn();
-            if (conn.State != ConnectionState.Open) conn.Open();
-
-            try
-            {
-                MySqlCommand command = conn.CreateCommand();
-
-                command.CommandText = "UPDATE reparation SET date = @date,panne = @panne,cout = @cout WHERE  idMat = @idMat AND idClient=@idCl";
-
-                command.Parameters.Add(new MySqlParameter("@date", repar1.Date));
-                command.Parameters.Add(new MySqlParameter("@panne", repar1.Panne));
-                command.Parameters.Add(new MySqlParameter("@cout", repar1.Cout));
-                command.Parameters.Add(new MySqlParameter("@idMat", idMat));
-                command.Parameters.Add(new MySqlParameter("@idCl",idClient));
-
-
-                command.ExecuteNonQuery();
-                conn.Close();
-
-            }
-            catch (Exception ex)
-            {
-                conn.Close();
-                throw ex;
-            }
-            return repa1;
-        }
-        #endregion
-        */
+               command.CommandText = "DELETE FROM materiel WHERE idMat = @id";
+
+               command.Parameters.Add(new MySqlParameter("@id", mater1.Idmat));
+
+               MySqlDataReader materielReader = command.ExecuteReader();
+               if (materielReader.Read())
+               {
+                   mater = new  Materiel();  
+
+                   mater.Idmat = materielReader["idmater"].ToString();
+                   mater.Nom = materielReader["nom"].ToString();
+                   mater.NumeroSerie = materielReader["serie"].ToString();
+                   mater.Marque = materielReader["marque"].ToString();
+                   mater.Photo = materielReader["photo"] as byte[];
+                   mater.Commentaire = materielReader["commentaire"].ToString();
+
+               }
+               materielReader.Close();
+
+               command.ExecuteNonQuery();
+               conn.Close();
+
+           }
+           catch (Exception ex)
+           {
+               throw ex;
+           }
+
+       }
+
+       public static  Materiel updateMateriel( Materiel mater)
+       {
+           initialiserConn();
+           if (conn.State != ConnectionState.Open) conn.Open();
+
+           try
+           {
+               MySqlCommand command = conn.CreateCommand();
+
+               command.CommandText = "UPDATE materiel SET nom = @no,serie = @se,marque = @mar,photo = @photo,commentaire = @com , idClient = @idCli WHERE idMat = @id";
+
+               command.Parameters.Add(new MySqlParameter("@id", mater.Idmat));
+               command.Parameters.Add(new MySqlParameter("@no", mater.Nom));
+               command.Parameters.Add(new MySqlParameter("@se", mater.NumeroSerie));
+               command.Parameters.Add(new MySqlParameter("@mar", mater.Marque));
+               command.Parameters.Add(new MySqlParameter("@photo", mater.Photo));
+               command.Parameters.Add(new MySqlParameter("@com", mater.Commentaire));
+               command.Parameters.Add(new MySqlParameter("@idCli", mater.IdClient));
+
+               command.ExecuteNonQuery();
+               conn.Close();
+
+           }
+           catch (Exception ex)
+           {
+               conn.Close();
+               throw ex;
+           }
+           return mater;
+       }
+
+       #endregion
+
+
+       #region Reparation
+
+
+       public static ArrayList getAllReparation()
+       {
+
+           ArrayList reparations = new ArrayList();
+
+           initialiserConn();
+
+           if (conn.State != ConnectionState.Open) conn.Open();
+
+           MySqlCommand commande = conn.CreateCommand();
+           commande.CommandText = "SELECT * FROM reparation";
+           MySqlDataReader reparationReader = commande.ExecuteReader();
+           while (reparationReader.Read())
+           {
+               repar1 = new  Reparation();
+
+
+               repar1.Cout = int.Parse(reparationReader["cout"].ToString());
+               repar1.Panne = reparationReader["panne"].ToString();
+               repar1.Date = DateTime.Parse(reparationReader["date"].ToString());
+               repar1.IdMateriel = reparationReader["idMat"].ToString();
+               repar1.IdClient = reparationReader["idClient"].ToString();
+               reparations.Add(repar1);
+           }
+           reparationReader.Close();
+           conn.Close();
+           return reparations;
+       }
+       //   public static Clients getClientByID() { return null; }
+
+       public static  Reparation addReparation( Reparation repar1)
+       {
+           initialiserConn();
+           if (conn.State != ConnectionState.Open) conn.Open();
+
+           try
+           {
+               MySqlCommand command = conn.CreateCommand();
+
+               command.CommandText = "INSERT INTO reparation(date,panne,cout,idMat,idClient) VALUES(@date, @panne,@cout, @idMat,@idCl)";
+
+
+               command.Parameters.Add(new MySqlParameter("@date", repar1.Date));
+               command.Parameters.Add(new MySqlParameter("@panne", repar1.Panne));
+               command.Parameters.Add(new MySqlParameter("@cout", repar1.Cout));
+               command.Parameters.Add(new MySqlParameter("@idMat", repar1.IdMateriel));
+               command.Parameters.Add(new MySqlParameter("@idCl", repar1.IdClient));
+
+               command.ExecuteNonQuery();
+               conn.Close();
+
+           }
+           catch (Exception ex)
+           {
+               conn.Close();
+               throw ex;
+           }
+           return repar1;
+       }
+
+       public static  Reparation getIdByReparation(string idMater, string idClient)
+       {
+           initialiserConn();
+           if (conn.State != ConnectionState.Open) conn.Open();
+
+           try
+           {
+               MySqlCommand command = conn.CreateCommand();
+
+               command.CommandText = "SELECT * FROM reparation WHERE idClient = @idClient AND idMat = @idMat";
+
+               command.Parameters.Add(new MySqlParameter("@idClient", idMater));
+               command.Parameters.Add(new MySqlParameter("@idMat", idClient));
+
+               MySqlDataReader reparationReader = command.ExecuteReader();
+               if (reparationReader.Read())
+               {
+                   repar1 = new  Reparation();
+
+                   repar1.Cout = int.Parse(reparationReader["cout"].ToString());
+                   repar1.Panne = reparationReader["panne"].ToString();
+                   repar1.Date = DateTime.Parse(reparationReader["date"].ToString());
+                   repar1.IdMateriel = reparationReader["idMat"].ToString();
+                   repar1.IdClient = reparationReader["idClient"].ToString();
+
+               }
+               reparationReader.Close();
+
+               command.ExecuteNonQuery();
+               conn.Close();
+
+           }
+           catch (Exception ex)
+           {
+               throw ex;
+           }
+           return repar1;
+       }
+
+
+       public static void supprimerReparation( Reparation repar1)
+       {
+           initialiserConn();
+           if (conn.State != ConnectionState.Open) conn.Open();
+
+
+
+           try
+           {
+               MySqlCommand command = conn.CreateCommand();
+
+               command.CommandText = "DELETE FROM reparation WHERE idMat = @id AND idMat = @idMat";
+
+               command.Parameters.Add(new MySqlParameter("@id", repar1.IdMateriel));
+
+               MySqlDataReader reparationReader = command.ExecuteReader();
+               if (reparationReader.Read())
+               {
+                   repar1 = new  Reparation();
+
+                   repar1.Cout = int.Parse(reparationReader["cout"].ToString());
+                   repar1.Panne = reparationReader["panne"].ToString();
+                   repar1.Date = DateTime.Parse(reparationReader["date"].ToString());
+                   repar1.IdMateriel = reparationReader["idMat"].ToString();
+                   repar1.IdClient = reparationReader["idClient"].ToString();
+
+               }
+               reparationReader.Close();
+
+               command.ExecuteNonQuery();
+               conn.Close();
+
+           }
+           catch (Exception ex)
+           {
+               throw ex;
+           }
+
+       }
+
+       public static  Reparation updateReparation( Reparation repa1,string idMat,string idClient)
+       {
+           initialiserConn();
+           if (conn.State != ConnectionState.Open) conn.Open();
+
+           try
+           {
+               MySqlCommand command = conn.CreateCommand();
+
+               command.CommandText = "UPDATE reparation SET date = @date,panne = @panne,cout = @cout WHERE  idMat = @idMat AND idClient=@idCl";
+
+               command.Parameters.Add(new MySqlParameter("@date", repar1.Date));
+               command.Parameters.Add(new MySqlParameter("@panne", repar1.Panne));
+               command.Parameters.Add(new MySqlParameter("@cout", repar1.Cout));
+               command.Parameters.Add(new MySqlParameter("@idMat", idMat));
+               command.Parameters.Add(new MySqlParameter("@idCl",idClient));
+
+
+               command.ExecuteNonQuery();
+               conn.Close();
+
+           }
+           catch (Exception ex)
+           {
+               conn.Close();
+               throw ex;
+           }
+           return repa1;
+       }
+       #endregion
+       */
     }
 }

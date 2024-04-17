@@ -50,10 +50,7 @@ namespace Vue
         }
         private void DashBoard_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
-            this.panelDashboard.Controls.Clear();
-            ucBanque banque = new ucBanque();
-            this.panelDashboard.Controls.Add(banque);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,10 +60,7 @@ namespace Vue
 
         private void buttonOperation_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
-            this.panelDashboard.Controls.Clear();
-            ucProfile profile = new ucProfile();
-            this.panelDashboard.Controls.Add(profile);
+            
         }
 
         private void buttonReport_Click(object sender, EventArgs e)
@@ -98,6 +92,57 @@ namespace Vue
         }
 
         private void panelDashboard_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DashBoard_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucBanque banque = new ucBanque();
+            this.panelDashboard.Controls.Add(banque);
+        }
+
+        private void buttonOperation_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucProfile profile = new ucProfile();
+            this.panelDashboard.Controls.Add(profile);
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LogOut_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonHistoric_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonUser_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonReport_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelHeader_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }
