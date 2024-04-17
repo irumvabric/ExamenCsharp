@@ -84,6 +84,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Controlleur\Controlleur.csproj">
+      <Project>{5cd9de15-939e-4101-880c-e2f6d10ecdc7}</Project>
+      <Name>Controlleur</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Vue\Vue.csproj">
       <Project>{45e3bf27-fe2e-4c99-8a40-bbb5af1df41e}</Project>
       <Name>Vue</Name>

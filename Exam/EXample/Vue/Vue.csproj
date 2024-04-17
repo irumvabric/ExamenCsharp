@@ -65,6 +65,12 @@
     <Compile Include="ucClient.Designer.cs">
       <DependentUpon>ucClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHome.Designer.cs">
+      <DependentUpon>ucHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     <EmbeddedResource Include="ucClient.resx">
       <DependentUpon>ucClient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucHome.resx">
+      <DependentUpon>ucHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucMateriel.resx">
       <DependentUpon>ucMateriel.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +136,27 @@
       <Project>{f6943b43-94f4-41ef-844a-4b8688441555}</Project>
       <Name>Modele</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinApp %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transaction List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graph Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Activity History.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Pane.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

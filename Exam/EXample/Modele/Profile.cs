@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modele
 {
-    internal class Profile
+    public class Profile
     {
         private string id, nomProfile, privilege;
         private int salaire;

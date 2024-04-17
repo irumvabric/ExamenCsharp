@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Vue;
+using Controlleur;
+using System.Collections;
 
 namespace EXample
 {
@@ -17,20 +19,22 @@ namespace EXample
         private Button btnOK;
         private Random random;
         private int tempIndex;
+        ArrayList listeNomProfile = new ArrayList();
 
         //constructor
         public Form1()
         {
             InitializeComponent();
+            listeNomProfile = Factory.ProfileName();
         }
 
         private void ActivateButton(object btnSender)
         {
-            if(btnSender != null) {
+            if (btnSender != null) {
                 if (btnOK != (Button)btnSender)
                 {
-                    DisableButton();    
-                   // Color color = Color.White;
+                    DisableButton();
+                    // Color color = Color.White;
                     btnOK = (Button)btnSender;
                     btnOK.BackColor = Color.LightCyan;
                     btnOK.ForeColor = Color.FromArgb(35, 124, 210);
@@ -41,7 +45,7 @@ namespace EXample
 
         private void DisableButton()
         {
-            foreach(Control previousBtn in panelMenu.Controls) {
+            foreach (Control previousBtn in panel1.Controls) {
                 if (previousBtn.GetType() == typeof(Button))
                 {
                     previousBtn.BackColor = Color.FromArgb(35, 124, 210);
@@ -85,50 +89,7 @@ namespace EXample
             this.panelDashboard.Controls.Add(frmReparation);
         }
 
-        private void DashBoard_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            this.panelDashboard.Controls.Clear();
-            ucBanque banque = new ucBanque();
-            this.panelDashboard.Controls.Add(banque);
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonOperation_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            this.panelDashboard.Controls.Clear();
-            ucProfile profile = new ucProfile();
-            this.panelDashboard.Controls.Add(profile);
-        }
-
-        private void buttonReport_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-
-        }
-
-        private void buttonUser_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-
-        }
-
-        private void buttonHistoric_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-
-        }
-
-        private void LogOut_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-
-        }
 
         private void panelDashboard_Paint(object sender, PaintEventArgs e)
         {
@@ -136,6 +97,32 @@ namespace EXample
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+            ChatgerProfileName();
+        }
+
+        void ChatgerProfileName(){
+            comboBoxRole.DataSource = listeNomProfile;
+         }
+
+        private void buttonConnexion_Click(object sender, EventArgs e)
+        {
+            string username = textBox1.Text;
+            string pass = textBox2.Text;
+            if (Factory.Connexion(username,pass) == true)
+            {
+                this.panelDashboard.Controls.Clear();
+                ucHome ucHome = new ucHome();
+                this.panelDashboard.Controls.Add(ucHome);
+
+            }
+            else
+            {
+                MessageBox.Show("Your inputs are not correct");
+            }
+        }
+
+        private void comboBoxRole_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

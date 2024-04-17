@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Modele
 {
-    internal class utilisateur
+    public class utilisateur
     {
 
         private string idUtilisateur,nom, prenom, username,password, nomProfile;
+
+        public utilisateur() { }
 
         public utilisateur(string idUtilisateur, string nom, string prenom, string username, string password, string nomProfile) { 
             this.idUtilisateur = idUtilisateur;

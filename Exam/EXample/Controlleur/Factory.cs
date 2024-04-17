@@ -25,9 +25,80 @@ namespace Controlleur
         public static void initialiserConn()
         {
             string pwd = "";
-            string chaine = "Server=localhost;Database=maisoninformatique;port=3306 ; User Id=root;password = " + pwd;
+            string chaine = "Server=localhost;Database=gestionfinance;port=3306 ; User Id=root;password = " + pwd;
             conn = new MySqlConnection(chaine);
         }
+
+
+        #region
+
+        public static Boolean Connexion(string username, string password)
+        {
+            initialiserConn();
+            if (conn.State != ConnectionState.Open) conn.Open();
+
+            Modele.utilisateur util1 = null;
+
+
+            MySqlCommand command = conn.CreateCommand();
+
+            command.CommandText = "SELECT * FROM utilisateur WHERE username = @user AND motDePasse = @password";
+
+            command.Parameters.Add(new MySqlParameter("@user", username));
+            command.Parameters.Add(new MySqlParameter("@password", password));
+
+            using (MySqlDataReader utilReader = command.ExecuteReader())
+            {
+                try
+                {
+
+                    if (utilReader.HasRows)
+                    {
+                        return true;
+                    }
+                    utilReader.Close();
+
+                    command.ExecuteNonQuery();
+                    conn.Close();
+
+                }
+                catch (Exception ex)
+                {
+
+                    utilReader.Close();
+                    conn.Close();
+                    throw ex;
+
+                }
+
+            }
+            return false;
+        }
+
+        public static ArrayList ProfileName()
+        {
+
+            utilisateur util2 = new utilisateur();
+            Profile prof = new Profile();
+            ArrayList user = new ArrayList();
+            initialiserConn();
+
+            if (conn.State != ConnectionState.Open) conn.Open();
+
+            MySqlCommand commande = conn.CreateCommand();
+            commande.CommandText = "select prof.nom FROM utilisateur AS util "+ 
+                                    "JOIN Profile AS prof ON util.idProfille = prof.id";
+            MySqlDataReader utilReader = commande.ExecuteReader();
+            while (utilReader.Read())
+            {
+                prof.Nom= utilReader["nom"].ToString();
+                user.Add(client);
+            }
+            utilReader.Close();
+            conn.Close();
+            return user;
+        }
+        #endregion
         /*
 
         #region Client

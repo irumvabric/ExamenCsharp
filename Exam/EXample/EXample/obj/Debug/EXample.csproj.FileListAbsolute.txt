@@ -52,3 +52,5 @@ C:\Users\Bigirimana\source\repos\Exam\EXample\EXample\obj\Debug\EXample.csproj.C
 C:\Users\Bigirimana\source\repos\Exam\EXample\EXample\obj\Debug\EXample.csproj.Up2Date
 C:\Users\Bigirimana\source\repos\Exam\EXample\EXample\obj\Debug\EXample.exe
 C:\Users\Bigirimana\source\repos\Exam\EXample\EXample\obj\Debug\EXample.pdb
+C:\Users\Bigirimana\source\repos\Exam\EXample\EXample\bin\Debug\Controlleur.dll
+C:\Users\Bigirimana\source\repos\Exam\EXample\EXample\bin\Debug\Controlleur.pdb
