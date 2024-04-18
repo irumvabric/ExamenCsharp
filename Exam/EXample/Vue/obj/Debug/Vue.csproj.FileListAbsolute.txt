@@ -53,3 +53,4 @@ C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucOperation.reso
 C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucTitleCompte.resources
 C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucUser.resources
 C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucUtilisateur.resources
+C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucCompte.resources

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2024 at 04:39 AM
+-- Generation Time: Apr 19, 2024 at 01:35 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `gestionfinance`
+-- Database: `ok`
 --
 
 -- --------------------------------------------------------
@@ -34,6 +34,35 @@ CREATE TABLE `banque` (
   `Location` varchar(20) NOT NULL,
   `Contact` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `banque`
+--
+
+INSERT INTO `banque` (`idBanque`, `nom`, `NumeroDeCompte`, `Location`, `Contact`) VALUES
+(2324, 'rtyu', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `compte`
+--
+
+CREATE TABLE `compte` (
+  `idCompte` varchar(20) NOT NULL,
+  `typeCompte` varchar(20) NOT NULL,
+  `solde` int(20) NOT NULL,
+  `idBanque` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `compte`
+--
+
+INSERT INTO `compte` (`idCompte`, `typeCompte`, `solde`, `idBanque`) VALUES
+('2323', 'rtyu', 3333, 'compte courant'),
+('wew', 'rtyu', 23, 'compte-titre'),
+('we', 'compte-titre', 23, 'rtyu');
 
 -- --------------------------------------------------------
 
@@ -59,6 +88,7 @@ CREATE TABLE `operation` (
   `idCompte` varchar(30) NOT NULL,
   `Libele` varchar(30) NOT NULL,
   `Fond` int(20) NOT NULL,
+  `TypeOperation` varchar(20) NOT NULL,
   `Date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -148,7 +178,7 @@ ALTER TABLE `utilisateur`
 -- AUTO_INCREMENT for table `banque`
 --
 ALTER TABLE `banque`
-  MODIFY `idBanque` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idBanque` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2325;
 
 --
 -- AUTO_INCREMENT for table `historique`

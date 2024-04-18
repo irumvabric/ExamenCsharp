@@ -178,5 +178,13 @@ namespace EXample
             ucProfile pro = new ucProfile();
             this.panelDashboard.Controls.Add(pro);
         }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucCompte compte = new ucCompte();
+            this.panelDashboard.Controls.Add(compte);
+        }
     }
 }

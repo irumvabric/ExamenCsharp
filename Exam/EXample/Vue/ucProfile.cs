@@ -50,16 +50,17 @@ namespace Vue
         {
             Profile profile = new Profile();
 
-            profile.Id = prof.Id;
-            profile.Nom = prof.Nom;
-            profile.Salaire = prof.Salaire;
-            profile.Privilege = prof.Privilege;
+            profile.Id = tbxId.Text;
+            profile.Nom = textBox1.Text;
+            profile.Salaire = int.Parse(textBoxSalaire.Text);            
+            profile.Privilege = tbxPrivileges.Text;
 
             return profile;
         }
         private void button2_Click(object sender, EventArgs e)
         {
             if (prof != null)
+
             {
                 if (tbxId.Text != "")
                 {
@@ -129,6 +130,16 @@ namespace Vue
 
         private void dataGridView2_SelectionChanged(object sender, EventArgs e)
         {
+            
+        }
+
+        private void ucUser1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
             if (dataGridView1.SelectedRows.Count > 0)
             {
 
@@ -138,11 +149,6 @@ namespace Vue
                 recuperationProfile(prof);
 
             }
-        }
-
-        private void ucUser1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

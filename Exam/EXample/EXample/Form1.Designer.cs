@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelHeader = new System.Windows.Forms.Panel();
-            this.panelDashboard = new System.Windows.Forms.Panel();
             this.LogOut = new System.Windows.Forms.Button();
             this.buttonHistoric = new System.Windows.Forms.Button();
             this.buttonUser = new System.Windows.Forms.Button();
             this.buttonReport = new System.Windows.Forms.Button();
             this.buttonOperation = new System.Windows.Forms.Button();
             this.DashBoard = new System.Windows.Forms.Button();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.panelDashboard = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelHeader.SuspendLayout();
             this.SuspendLayout();
@@ -57,28 +57,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 638);
             this.panelMenu.TabIndex = 4;
-            // 
-            // panelHeader
-            // 
-            this.panelHeader.BackColor = System.Drawing.Color.White;
-            this.panelHeader.Controls.Add(this.button1);
-            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(0, 0);
-            this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(220, 98);
-            this.panelHeader.TabIndex = 0;
-            // 
-            // panelDashboard
-            // 
-            this.panelDashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelDashboard.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panelDashboard.Location = new System.Drawing.Point(219, 0);
-            this.panelDashboard.Name = "panelDashboard";
-            this.panelDashboard.Size = new System.Drawing.Size(1042, 638);
-            this.panelDashboard.TabIndex = 5;
-            this.panelDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashboard_Paint_1);
             // 
             // LogOut
             // 
@@ -150,6 +128,7 @@
             this.buttonReport.TabIndex = 3;
             this.buttonReport.Text = "Report      ";
             this.buttonReport.UseVisualStyleBackColor = true;
+            this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
             // 
             // buttonOperation
             // 
@@ -187,6 +166,16 @@
             this.DashBoard.UseVisualStyleBackColor = true;
             this.DashBoard.Click += new System.EventHandler(this.DashBoard_Click);
             // 
+            // panelHeader
+            // 
+            this.panelHeader.BackColor = System.Drawing.Color.White;
+            this.panelHeader.Controls.Add(this.button1);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(220, 98);
+            this.panelHeader.TabIndex = 0;
+            // 
             // button1
             // 
             this.button1.BackgroundImage = global::EXample.Properties.Resources.FinApp__1_1;
@@ -203,6 +192,18 @@
             this.button1.UseMnemonic = false;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panelDashboard
+            // 
+            this.panelDashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelDashboard.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelDashboard.Location = new System.Drawing.Point(219, 0);
+            this.panelDashboard.Name = "panelDashboard";
+            this.panelDashboard.Size = new System.Drawing.Size(1042, 638);
+            this.panelDashboard.TabIndex = 5;
+            this.panelDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashboard_Paint_1);
             // 
             // Form1
             // 

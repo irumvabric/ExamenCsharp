@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Modele
 {
-    internal class Banque
+    public class Banque
     {
-        private string idBanque, nomBanque;
+        private string idBanque, nomBanque,location,contact,idCompleteBanque;
 
         public string IdBanque
         {
@@ -21,11 +21,29 @@ namespace Modele
             get { return nomBanque; }
             set { nomBanque = value; }
         }
+
+        public string Location
+        {
+            get { return location; }
+            set { location = value; }
+        }
+
+        public string Contact
+        {
+            get { return contact; }
+            set { contact = value; }
+        }
+
+        public string IdCompleteBanque {
+            get { return nomBanque; } 
+        }
         public Banque() { }
-        public Banque(string idBanque, string nomBanque)
+        public Banque(string idBanque, string nomBanque,string location,string contact)
         {
             this.idBanque = idBanque;
             this.nomBanque = nomBanque;
+            this.location = location;
+            this.contact = contact;
         }
     }
 }
