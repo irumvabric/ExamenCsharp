@@ -47,7 +47,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ucUser1 = new Vue.ucUser();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +71,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(33, 139);
+            this.panel1.Location = new System.Drawing.Point(36, 25);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(462, 487);
             this.panel1.TabIndex = 0;
@@ -258,30 +257,21 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(531, 139);
+            this.dataGridView1.Location = new System.Drawing.Point(534, 25);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(454, 487);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // ucUser1
-            // 
-            this.ucUser1.Location = new System.Drawing.Point(33, 3);
-            this.ucUser1.Name = "ucUser1";
-            this.ucUser1.Size = new System.Drawing.Size(952, 109);
-            this.ucUser1.TabIndex = 2;
-            this.ucUser1.Load += new System.EventHandler(this.ucUser1_Load);
             // 
             // ucProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Controls.Add(this.ucUser1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "ucProfile";
-            this.Size = new System.Drawing.Size(1042, 638);
+            this.Size = new System.Drawing.Size(1042, 537);
             this.Load += new System.EventHandler(this.ucProfile_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -307,7 +297,6 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private ucUser ucUser1;
         private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.TextBox tbxPrivileges;
         private System.Windows.Forms.TextBox tbxId;

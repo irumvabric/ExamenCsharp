@@ -9,6 +9,7 @@ using System.Data;
 using Modele;
 using System.Diagnostics;
 using MySql.Data.MySqlClient.Memcached;
+using System.Reflection;
 
 namespace Controlleur
 {
@@ -799,8 +800,24 @@ namespace Controlleur
                 command.Parameters.Add(new MySqlParameter("@Date", op1.Date));
 
                 command.ExecuteNonQuery();
-                conn.Close();
+                
 
+                MySqlCommand command2 = conn.CreateCommand();
+
+                command2.CommandText = "UPDATE compte c"+
+                        "SET c.solde = ("+
+                            "SELECT c.solde +"+
+                                "CASE WHEN o.TypeOperation = 'Retrait' THEN - o.Fond ELSE o.Fond END"+
+                            "FROM operation o" +
+                            "WHERE o.idCompte = c.idCompte" +
+                            ")"+
+                        "WHERE c.idCompte = @idOp";
+
+                command2.Parameters.Add(new MySqlParameter("@idOp", op1.IdOperation));
+
+                command2.ExecuteNonQuery();
+
+                conn.Close();
             }
             catch (Exception ex)
             {
@@ -819,9 +836,9 @@ namespace Controlleur
             {
                 MySqlCommand command = conn.CreateCommand();
 
-                command.CommandText = "SELECT * FROM operation WHERE idOperation = @idClient";
+                command.CommandText = "SELECT * FROM operation WHERE idOperation = @idOperation";
 
-                command.Parameters.Add(new MySqlParameter("@idClient", idOperation));
+                command.Parameters.Add(new MySqlParameter("@idOperation", idOperation));
 
                 MySqlDataReader operationReader = command.ExecuteReader();
                 if (operationReader.Read())

@@ -25,7 +25,7 @@ namespace Vue
             {
                 if (btnOK != (Button)btnSender)
                 {
-                    DisableButton();
+                    // DisableButton();
                     // Color color = Color.White;
                     btnOK = (Button)btnSender;
                     btnOK.BackColor = Color.LightCyan;
@@ -35,7 +35,7 @@ namespace Vue
             }
         }
 
-        private void DisableButton()
+       /* private void DisableButton()
         {
             foreach (Control previousBtn in panelMenu.Controls)
             {
@@ -47,7 +47,7 @@ namespace Vue
 
                 }
             }
-        }
+        } */
         private void DashBoard_Click(object sender, EventArgs e)
         {
             
@@ -143,6 +143,16 @@ namespace Vue
         }
 
         private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }

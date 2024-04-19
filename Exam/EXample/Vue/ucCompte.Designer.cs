@@ -34,7 +34,6 @@
             this.tbxIdCompte = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonDelete = new System.Windows.Forms.Button();
-            this.ucTitleCompte1 = new Vue.ucTitleCompte();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonRead = new System.Windows.Forms.Button();
@@ -117,13 +116,6 @@
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // ucTitleCompte1
-            // 
-            this.ucTitleCompte1.Location = new System.Drawing.Point(126, 22);
-            this.ucTitleCompte1.Name = "ucTitleCompte1";
-            this.ucTitleCompte1.Size = new System.Drawing.Size(975, 119);
-            this.ucTitleCompte1.TabIndex = 7;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -137,7 +129,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
             this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(548, 147);
+            this.panel2.Location = new System.Drawing.Point(540, 23);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(472, 462);
             this.panel2.TabIndex = 6;
@@ -213,7 +205,7 @@
             this.panel1.Controls.Add(this.buttonSave);
             this.panel1.Controls.Add(this.textBoxSolde);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(45, 147);
+            this.panel1.Location = new System.Drawing.Point(37, 23);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(472, 462);
             this.panel1.TabIndex = 5;
@@ -246,11 +238,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.ucTitleCompte1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ucCompte";
-            this.Size = new System.Drawing.Size(1057, 630);
+            this.Size = new System.Drawing.Size(1042, 537);
             this.Load += new System.EventHandler(this.ucCompte_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -268,7 +259,7 @@
         private System.Windows.Forms.TextBox tbxIdCompte;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonDelete;
-        private ucTitleCompte ucTitleCompte1;
+     //   private ucTitleCompte ucTitleCompte1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonRead;

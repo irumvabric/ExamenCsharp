@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonReset = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,8 +48,6 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ucUser1 = new Vue.ucUser();
-            this.buttonReset = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -74,10 +73,22 @@
             this.panel1.Controls.Add(this.buttonRead);
             this.panel1.Controls.Add(this.buttonModify);
             this.panel1.Controls.Add(this.buttonSave);
-            this.panel1.Location = new System.Drawing.Point(41, 180);
+            this.panel1.Location = new System.Drawing.Point(27, 29);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(472, 405);
+            this.panel1.Size = new System.Drawing.Size(472, 467);
             this.panel1.TabIndex = 3;
+            // 
+            // buttonReset
+            // 
+            this.buttonReset.FlatAppearance.BorderSize = 0;
+            this.buttonReset.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReset.Location = new System.Drawing.Point(284, 352);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(75, 23);
+            this.buttonReset.TabIndex = 33;
+            this.buttonReset.Text = "Reset";
+            this.buttonReset.UseVisualStyleBackColor = true;
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
             // label3
             // 
@@ -241,9 +252,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
             this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(552, 180);
+            this.panel2.Location = new System.Drawing.Point(538, 29);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(472, 405);
+            this.panel2.Size = new System.Drawing.Size(472, 467);
             this.panel2.TabIndex = 31;
             // 
             // dataGridView1
@@ -251,39 +262,18 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(15, 15);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(443, 378);
+            this.dataGridView1.Size = new System.Drawing.Size(443, 436);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // ucUser1
-            // 
-            this.ucUser1.Location = new System.Drawing.Point(41, 24);
-            this.ucUser1.Name = "ucUser1";
-            this.ucUser1.Size = new System.Drawing.Size(983, 150);
-            this.ucUser1.TabIndex = 32;
-            this.ucUser1.Load += new System.EventHandler(this.ucUser1_Load);
-            // 
-            // buttonReset
-            // 
-            this.buttonReset.FlatAppearance.BorderSize = 0;
-            this.buttonReset.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonReset.Location = new System.Drawing.Point(284, 352);
-            this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(75, 23);
-            this.buttonReset.TabIndex = 33;
-            this.buttonReset.Text = "Reset";
-            this.buttonReset.UseVisualStyleBackColor = true;
-            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
             // ucUtilisateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.ucUser1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ucUtilisateur";
-            this.Size = new System.Drawing.Size(1042, 638);
+            this.Size = new System.Drawing.Size(1042, 537);
             this.Load += new System.EventHandler(this.ucUtilisateur_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -314,7 +304,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private ucUser ucUser1;
         private System.Windows.Forms.Button buttonReset;
     }
 }

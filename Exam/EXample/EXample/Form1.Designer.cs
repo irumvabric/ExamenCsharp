@@ -36,10 +36,19 @@
             this.buttonOperation = new System.Windows.Forms.Button();
             this.DashBoard = new System.Windows.Forms.Button();
             this.panelHeader = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.panelBar = new System.Windows.Forms.Panel();
+            this.buttonBanqueMenu = new System.Windows.Forms.Button();
+            this.buttonCompteMenu = new System.Windows.Forms.Button();
+            this.buttonOperationMenu = new System.Windows.Forms.Button();
+            this.buttonbuttonProfileMenu = new System.Windows.Forms.Button();
+            this.buttonUtilisateurMenu = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelDashboard = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelHeader.SuspendLayout();
+            this.panelBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -108,7 +117,7 @@
             this.buttonUser.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.buttonUser.Size = new System.Drawing.Size(220, 57);
             this.buttonUser.TabIndex = 4;
-            this.buttonUser.Text = "Users        ";
+            this.buttonUser.Text = "              Gestion                     Utilisateur";
             this.buttonUser.UseVisualStyleBackColor = true;
             this.buttonUser.Click += new System.EventHandler(this.buttonUser_Click);
             // 
@@ -144,7 +153,7 @@
             this.buttonOperation.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.buttonOperation.Size = new System.Drawing.Size(220, 57);
             this.buttonOperation.TabIndex = 2;
-            this.buttonOperation.Text = "     Operation";
+            this.buttonOperation.Text = "              Gestion                    Operation";
             this.buttonOperation.UseVisualStyleBackColor = true;
             this.buttonOperation.Click += new System.EventHandler(this.buttonOperation_Click);
             // 
@@ -169,12 +178,21 @@
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.White;
+            this.panelHeader.Controls.Add(this.flowLayoutPanel1);
+            this.panelHeader.Controls.Add(this.panel1);
             this.panelHeader.Controls.Add(this.button1);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(220, 98);
             this.panelHeader.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(218, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1067, 638);
+            this.panel1.TabIndex = 0;
             // 
             // button1
             // 
@@ -193,30 +211,108 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panelBar
+            // 
+            this.panelBar.Controls.Add(this.buttonBanqueMenu);
+            this.panelBar.Controls.Add(this.buttonCompteMenu);
+            this.panelBar.Controls.Add(this.buttonOperationMenu);
+            this.panelBar.Controls.Add(this.buttonbuttonProfileMenu);
+            this.panelBar.Controls.Add(this.buttonUtilisateurMenu);
+            this.panelBar.Location = new System.Drawing.Point(221, 3);
+            this.panelBar.Name = "panelBar";
+            this.panelBar.Size = new System.Drawing.Size(1040, 98);
+            this.panelBar.TabIndex = 5;
+            this.panelBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBar_Paint_1);
+            // 
+            // buttonBanqueMenu
+            // 
+            this.buttonBanqueMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
+            this.buttonBanqueMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBanqueMenu.ForeColor = System.Drawing.Color.White;
+            this.buttonBanqueMenu.Location = new System.Drawing.Point(824, 28);
+            this.buttonBanqueMenu.Name = "buttonBanqueMenu";
+            this.buttonBanqueMenu.Size = new System.Drawing.Size(137, 44);
+            this.buttonBanqueMenu.TabIndex = 8;
+            this.buttonBanqueMenu.Text = "Banque";
+            this.buttonBanqueMenu.UseVisualStyleBackColor = false;
+            // 
+            // buttonCompteMenu
+            // 
+            this.buttonCompteMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
+            this.buttonCompteMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCompteMenu.ForeColor = System.Drawing.Color.White;
+            this.buttonCompteMenu.Location = new System.Drawing.Point(644, 28);
+            this.buttonCompteMenu.Name = "buttonCompteMenu";
+            this.buttonCompteMenu.Size = new System.Drawing.Size(137, 44);
+            this.buttonCompteMenu.TabIndex = 7;
+            this.buttonCompteMenu.Text = "Compte";
+            this.buttonCompteMenu.UseVisualStyleBackColor = false;
+            // 
+            // buttonOperationMenu
+            // 
+            this.buttonOperationMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
+            this.buttonOperationMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOperationMenu.ForeColor = System.Drawing.Color.White;
+            this.buttonOperationMenu.Location = new System.Drawing.Point(460, 28);
+            this.buttonOperationMenu.Name = "buttonOperationMenu";
+            this.buttonOperationMenu.Size = new System.Drawing.Size(137, 44);
+            this.buttonOperationMenu.TabIndex = 6;
+            this.buttonOperationMenu.Text = "Operation";
+            this.buttonOperationMenu.UseVisualStyleBackColor = false;
+            // 
+            // buttonbuttonProfileMenu
+            // 
+            this.buttonbuttonProfileMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
+            this.buttonbuttonProfileMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonbuttonProfileMenu.ForeColor = System.Drawing.Color.White;
+            this.buttonbuttonProfileMenu.Location = new System.Drawing.Point(281, 28);
+            this.buttonbuttonProfileMenu.Name = "buttonbuttonProfileMenu";
+            this.buttonbuttonProfileMenu.Size = new System.Drawing.Size(137, 44);
+            this.buttonbuttonProfileMenu.TabIndex = 5;
+            this.buttonbuttonProfileMenu.Text = "Profile";
+            this.buttonbuttonProfileMenu.UseVisualStyleBackColor = false;
+            // 
+            // buttonUtilisateurMenu
+            // 
+            this.buttonUtilisateurMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(124)))), ((int)(((byte)(210)))));
+            this.buttonUtilisateurMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUtilisateurMenu.ForeColor = System.Drawing.Color.White;
+            this.buttonUtilisateurMenu.Location = new System.Drawing.Point(108, 28);
+            this.buttonUtilisateurMenu.Name = "buttonUtilisateurMenu";
+            this.buttonUtilisateurMenu.Size = new System.Drawing.Size(137, 44);
+            this.buttonUtilisateurMenu.TabIndex = 4;
+            this.buttonUtilisateurMenu.Text = "Utilisateur";
+            this.buttonUtilisateurMenu.UseVisualStyleBackColor = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(218, 98);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1043, 537);
+            this.flowLayoutPanel1.TabIndex = 6;
+            // 
             // panelDashboard
             // 
-            this.panelDashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelDashboard.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panelDashboard.Location = new System.Drawing.Point(219, 0);
+            this.panelDashboard.AutoScroll = true;
+            this.panelDashboard.Location = new System.Drawing.Point(220, 102);
             this.panelDashboard.Name = "panelDashboard";
-            this.panelDashboard.Size = new System.Drawing.Size(1042, 638);
-            this.panelDashboard.TabIndex = 5;
-            this.panelDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashboard_Paint_1);
+            this.panelDashboard.Size = new System.Drawing.Size(1040, 532);
+            this.panelDashboard.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1259, 638);
-            this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelDashboard);
+            this.Controls.Add(this.panelBar);
+            this.Controls.Add(this.panelMenu);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelHeader.ResumeLayout(false);
+            this.panelBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -232,6 +328,14 @@
         private System.Windows.Forms.Button DashBoard;
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelBar;
+        private System.Windows.Forms.Button buttonBanqueMenu;
+        private System.Windows.Forms.Button buttonCompteMenu;
+        private System.Windows.Forms.Button buttonOperationMenu;
+        private System.Windows.Forms.Button buttonbuttonProfileMenu;
+        private System.Windows.Forms.Button buttonUtilisateurMenu;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panelDashboard;
     }
 }

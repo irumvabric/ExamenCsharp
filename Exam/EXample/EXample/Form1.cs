@@ -63,6 +63,17 @@ namespace EXample
 
                 }
             }
+
+            foreach (Control previousBtn in panelBar.Controls)
+            {
+                if (previousBtn.GetType() == typeof(Button))
+                {
+                    previousBtn.BackColor = Color.FromArgb(35, 124, 210);
+                    previousBtn.ForeColor = Color.White;
+                    previousBtn.Font = new System.Drawing.Font("Neue Haas Grotesk Text Pro Blac", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))); ;
+
+                }
+            }
         }
 
         private void clientToolStripMenuItem_Click(object sender, EventArgs e)
@@ -141,9 +152,11 @@ namespace EXample
         private void DashBoard_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            this.panelDashboard.Controls.Clear();
-            ucBanque banque = new ucBanque();
-            this.panelDashboard.Controls.Add(banque);
+            this.panelBar.Controls.Clear();
+            panelDashboard.Height = 638;
+            ucHome hom1 = new ucHome();
+            this.panelDashboard.Controls.Add(hom1);
+            
         }
 
         private void buttonOperation_Click(object sender, EventArgs e)
@@ -173,18 +186,67 @@ namespace EXample
 
         private void buttonHistoric_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ucUser1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             ActivateButton(sender);
             this.panelDashboard.Controls.Clear();
             ucProfile pro = new ucProfile();
             this.panelDashboard.Controls.Add(pro);
         }
 
-        private void buttonReport_Click(object sender, EventArgs e)
+        private void buttonUtilisateurMenu_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucUtilisateur util1 = new ucUtilisateur();
+            this.panelDashboard.Controls.Add(util1);
+        }
+
+        private void buttonOperationMenu_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucOperation op1 = new ucOperation();
+            this.panelDashboard.Controls.Add(op1);
+        }
+
+        private void buttonBanqueMenu_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucBanque banque = new ucBanque();
+            this.panelDashboard.Controls.Add(banque);
+        }
+
+        private void buttonCompteMenu_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
             this.panelDashboard.Controls.Clear();
             ucCompte compte = new ucCompte();
             this.panelDashboard.Controls.Add(compte);
+        }
+
+        private void panelBar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelBar_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

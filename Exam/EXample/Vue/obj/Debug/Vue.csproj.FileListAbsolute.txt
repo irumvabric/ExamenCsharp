@@ -50,7 +50,5 @@ C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucBanque.resourc
 C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucProfile.resources
 C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucHome.resources
 C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucOperation.resources
-C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucTitleCompte.resources
-C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucUser.resources
 C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucUtilisateur.resources
 C:\Users\Bigirimana\source\repos\Exam\EXample\Vue\obj\Debug\Vue.ucCompte.resources

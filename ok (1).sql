@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2024 at 01:35 AM
+-- Generation Time: Apr 19, 2024 at 02:22 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -61,8 +61,8 @@ CREATE TABLE `compte` (
 
 INSERT INTO `compte` (`idCompte`, `typeCompte`, `solde`, `idBanque`) VALUES
 ('2323', 'rtyu', 3333, 'compte courant'),
-('wew', 'rtyu', 23, 'compte-titre'),
-('we', 'compte-titre', 23, 'rtyu');
+('we', 'compte-titre', 23, 'rtyu'),
+('wew', 'rtyu', 23, 'compte-titre');
 
 -- --------------------------------------------------------
 
@@ -91,6 +91,24 @@ CREATE TABLE `operation` (
   `TypeOperation` varchar(20) NOT NULL,
   `Date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `operation`
+--
+
+INSERT INTO `operation` (`idOperation`, `idCompte`, `Libele`, `Fond`, `TypeOperation`, `Date`) VALUES
+('223we', '2323', 'wew', 12, 'Retrait', '2024-04-19 10:44:48'),
+('23', '2323', '23', 23, 'Retrait', '2024-04-19 09:05:00'),
+('asw', '2323', 'we', 12, 'Retrait', '2024-04-19 10:50:12'),
+('bv', '2323', 'cc', 23000, 'Virement', '2024-04-19 10:30:16'),
+('bvc', '2323', '34', 34443, 'Virement', '2024-04-19 10:22:31'),
+('mn', '2323', 'www', 230000, 'Virement', '2024-04-19 10:28:59'),
+('nhn', '2323', 'sds', 23000, 'Virement', '2024-04-19 10:36:34'),
+('sd', '2323', 'we', 23000, 'Virement', '2024-04-19 10:26:20'),
+('swq', '2323', 'sdd', 23000, 'Virement', '2024-04-19 10:27:09'),
+('sws', '2323', 'd', 22, 'Virement', '2024-04-19 10:21:10'),
+('we', '2323', 'we', 23, 'Virement', '2024-04-04 10:19:22'),
+('wq', '2323', 'q', 12, 'Retrait', '2024-04-19 10:50:47');
 
 -- --------------------------------------------------------
 
@@ -147,6 +165,12 @@ ALTER TABLE `banque`
   ADD PRIMARY KEY (`idBanque`);
 
 --
+-- Indexes for table `compte`
+--
+ALTER TABLE `compte`
+  ADD PRIMARY KEY (`idCompte`);
+
+--
 -- Indexes for table `historique`
 --
 ALTER TABLE `historique`
@@ -156,7 +180,8 @@ ALTER TABLE `historique`
 -- Indexes for table `operation`
 --
 ALTER TABLE `operation`
-  ADD PRIMARY KEY (`idOperation`);
+  ADD PRIMARY KEY (`idOperation`),
+  ADD KEY `idOperation` (`idCompte`);
 
 --
 -- Indexes for table `profile`
@@ -191,6 +216,16 @@ ALTER TABLE `historique`
 --
 ALTER TABLE `profile`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `operation`
+--
+ALTER TABLE `operation`
+  ADD CONSTRAINT `idOperation` FOREIGN KEY (`idCompte`) REFERENCES `compte` (`idCompte`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
