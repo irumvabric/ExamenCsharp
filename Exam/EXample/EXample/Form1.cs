@@ -152,7 +152,7 @@ namespace EXample
         private void DashBoard_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            this.panelBar.Controls.Clear();
+           // this.panelBar.Controls.Clear();
             panelDashboard.Height = 638;
             ucHome hom1 = new ucHome();
             this.panelDashboard.Controls.Add(hom1);
@@ -171,6 +171,7 @@ namespace EXample
         {
             ActivateButton(sender);
             this.panelDashboard.Controls.Clear();
+            
             ucUtilisateur util1 = new ucUtilisateur();
             this.panelDashboard.Controls.Add(util1);
         }
@@ -201,42 +202,27 @@ namespace EXample
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
-            this.panelDashboard.Controls.Clear();
-            ucProfile pro = new ucProfile();
-            this.panelDashboard.Controls.Add(pro);
+            
         }
 
         private void buttonUtilisateurMenu_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
-            this.panelDashboard.Controls.Clear();
-            ucUtilisateur util1 = new ucUtilisateur();
-            this.panelDashboard.Controls.Add(util1);
+            
         }
 
         private void buttonOperationMenu_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
-            this.panelDashboard.Controls.Clear();
-            ucOperation op1 = new ucOperation();
-            this.panelDashboard.Controls.Add(op1);
+            
         }
 
         private void buttonBanqueMenu_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
-            this.panelDashboard.Controls.Clear();
-            ucBanque banque = new ucBanque();
-            this.panelDashboard.Controls.Add(banque);
+            
         }
 
         private void buttonCompteMenu_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
-            this.panelDashboard.Controls.Clear();
-            ucCompte compte = new ucCompte();
-            this.panelDashboard.Controls.Add(compte);
+            
         }
 
         private void panelBar_Paint(object sender, PaintEventArgs e)
@@ -245,6 +231,51 @@ namespace EXample
         }
 
         private void panelBar_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonUtilisateurMenu_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucUtilisateur util1 = new ucUtilisateur();
+            this.panelDashboard.Controls.Add(util1);
+        }
+
+        private void buttonbuttonProfileMenu_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucProfile pro = new ucProfile();
+            this.panelDashboard.Controls.Add(pro);
+        }
+
+        private void buttonOperationMenu_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucOperation op1 = new ucOperation();
+            this.panelDashboard.Controls.Add(op1);
+        }
+
+        private void buttonCompteMenu_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucCompte compte = new ucCompte();
+            this.panelDashboard.Controls.Add(compte);
+        }
+
+        private void buttonBanqueMenu_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.panelDashboard.Controls.Clear();
+            ucBanque banque = new ucBanque();
+            this.panelDashboard.Controls.Add(banque);
+        }
+
+        private void panelDashboard_Paint_2(object sender, PaintEventArgs e)
         {
 
         }

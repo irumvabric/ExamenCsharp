@@ -72,6 +72,12 @@
     <Compile Include="ucCompte.Designer.cs">
       <DependentUpon>ucCompte.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucHistorique.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHistorique.Designer.cs">
+      <DependentUpon>ucHistorique.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucCompte.resx">
       <DependentUpon>ucCompte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHistorique.resx">
+      <DependentUpon>ucHistorique.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucHome.resx">
       <DependentUpon>ucHome.cs</DependentUpon>

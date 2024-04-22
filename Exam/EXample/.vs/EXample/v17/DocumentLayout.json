@@ -3,24 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|c:\\users\\bigirimana\\source\\repos\\exam\\example\\vue\\uchome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\uchome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CD9DE15-939E-4101-880C-E2F6D10ECDC7}|Controlleur\\Controlleur.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\controlleur\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CD9DE15-939E-4101-880C-E2F6D10ECDC7}|Controlleur\\Controlleur.csproj|solutionrelative:controlleur\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\uchome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\uchome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{74C7524A-6509-4F97-84E8-D9C9AB3EB7A2}|EXample\\EXample.csproj|c:\\users\\bigirimana\\source\\repos\\exam\\example\\example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74C7524A-6509-4F97-84E8-D9C9AB3EB7A2}|EXample\\EXample.csproj|solutionrelative:example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74C7524A-6509-4F97-84E8-D9C9AB3EB7A2}|EXample\\EXample.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{74C7524A-6509-4F97-84E8-D9C9AB3EB7A2}|EXample\\EXample.csproj|solutionrelative:example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74C7524A-6509-4F97-84E8-D9C9AB3EB7A2}|EXample\\EXample.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74C7524A-6509-4F97-84E8-D9C9AB3EB7A2}|EXample\\EXample.csproj|solutionrelative:example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\ucauthentification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\ucauthentification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\ucauthentification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\ucauthentification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\uchistorique.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\uchistorique.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\uchistorique.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\uchistorique.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\uchome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\uchome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\uchome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\uchome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\ucbanque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\ucbanque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\uchome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\uchome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -67,27 +91,19 @@
       "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\ucclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\ucbanque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\ucbanque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|c:\\users\\bigirimana\\source\\repos\\exam\\example\\vue\\ucbanque.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\ucbanque.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\ucbanque.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|c:\\users\\bigirimana\\source\\repos\\exam\\example\\vue\\uccompte.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\uccompte.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\uccompte.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|c:\\users\\bigirimana\\source\\repos\\exam\\example\\vue\\ucoperation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\ucoperation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\ucoperation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CD9DE15-939E-4101-880C-E2F6D10ECDC7}|Controlleur\\Controlleur.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\controlleur\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CD9DE15-939E-4101-880C-E2F6D10ECDC7}|Controlleur\\Controlleur.csproj|solutionrelative:controlleur\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|c:\\users\\bigirimana\\source\\repos\\exam\\example\\vue\\ucoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\ucoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\ucoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -135,14 +151,6 @@
       "RelativeMoniker": "D:0:0:{F6943B43-94F4-41EF-844A-4B8688441555}|Modele\\Modele.csproj|solutionrelative:modele\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\ucauthentification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\ucauthentification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\ucauthentification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\ucauthentification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\vue\\ucutilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E3BF27-FE2E-4C99-8A40-BBB5AF1DF41E}|Vue\\Vue.csproj|solutionrelative:vue\\ucutilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -186,17 +194,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 0,
               "Title": "Factory.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Controlleur\\Factory.cs",
               "RelativeDocumentMoniker": "Controlleur\\Factory.cs",
               "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Controlleur\\Factory.cs",
               "RelativeToolTip": "Controlleur\\Factory.cs",
-              "ViewState": "AQIAAGMCAAAAAAAAAADgvygDAAAiAAAA",
+              "ViewState": "AQIAACIDAAAAAAAAAAAnwDgDAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T19:24:18.974Z",
               "IsPinned": true,
@@ -204,15 +212,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ucHome.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.Designer.cs",
-              "RelativeDocumentMoniker": "Vue\\ucHome.Designer.cs",
-              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.Designer.cs",
-              "RelativeToolTip": "Vue\\ucHome.Designer.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCgBAAALAAAA",
+              "DocumentIndex": 8,
+              "Title": "ucHome.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.cs",
+              "RelativeDocumentMoniker": "Vue\\ucHome.cs",
+              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.cs [Design]",
+              "RelativeToolTip": "Vue\\ucHome.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T11:15:17.239Z",
+              "WhenOpened": "2024-04-16T22:57:05.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ucHome.cs",
+              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.cs",
+              "RelativeDocumentMoniker": "Vue\\ucHome.cs",
+              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.cs",
+              "RelativeToolTip": "Vue\\ucHome.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAUwJwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T23:21:16.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ucBanque.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucBanque.cs",
+              "RelativeDocumentMoniker": "Vue\\ucBanque.cs",
+              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucBanque.cs [Design]",
+              "RelativeToolTip": "Vue\\ucBanque.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T12:47:31.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ucAuthentification.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucAuthentification.cs",
+              "RelativeDocumentMoniker": "Vue\\ucAuthentification.cs",
+              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucAuthentification.cs [Design]",
+              "RelativeToolTip": "Vue\\ucAuthentification.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T09:48:37.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ucAuthentification.cs",
+              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucAuthentification.cs",
+              "RelativeDocumentMoniker": "Vue\\ucAuthentification.cs",
+              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucAuthentification.cs",
+              "RelativeToolTip": "Vue\\ucAuthentification.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T12:49:24.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ucHistorique.cs",
+              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHistorique.cs",
+              "RelativeDocumentMoniker": "Vue\\ucHistorique.cs",
+              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHistorique.cs",
+              "RelativeToolTip": "Vue\\ucHistorique.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T14:38:24.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\EXample\\Form1.cs",
+              "RelativeDocumentMoniker": "EXample\\Form1.cs",
+              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\EXample\\Form1.cs",
+              "RelativeToolTip": "EXample\\Form1.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAuwBcBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T14:00:29.985Z",
               "EditorCaption": ""
             },
             {
@@ -224,62 +301,45 @@
               "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\EXample\\Form1.cs [Design]",
               "RelativeToolTip": "EXample\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T13:59:07.333Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-09T13:59:07.333Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\EXample\\Form1.cs",
-              "RelativeDocumentMoniker": "EXample\\Form1.cs",
-              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\EXample\\Form1.cs",
-              "RelativeToolTip": "EXample\\Form1.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAA1wGMAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T14:00:29.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "ucProfile.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucProfile.cs",
               "RelativeDocumentMoniker": "Vue\\ucProfile.cs",
               "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucProfile.cs [Design]",
               "RelativeToolTip": "Vue\\ucProfile.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T12:33:49.817Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-16T12:33:49.817Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ucHome.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.cs",
-              "RelativeDocumentMoniker": "Vue\\ucHome.cs",
-              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.cs [Design]",
-              "RelativeToolTip": "Vue\\ucHome.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "ucHistorique.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHistorique.cs",
+              "RelativeDocumentMoniker": "Vue\\ucHistorique.cs",
+              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHistorique.cs [Design]",
+              "RelativeToolTip": "Vue\\ucHistorique.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T22:57:05.839Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-19T13:48:56.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ucHome.cs",
-              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.cs",
-              "RelativeDocumentMoniker": "Vue\\ucHome.cs",
-              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.cs",
-              "RelativeToolTip": "Vue\\ucHome.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAAABsAAAAXAAAA",
+              "DocumentIndex": 10,
+              "Title": "ucHome.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.Designer.cs",
+              "RelativeDocumentMoniker": "Vue\\ucHome.Designer.cs",
+              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucHome.Designer.cs",
+              "RelativeToolTip": "Vue\\ucHome.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgBAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T23:21:16.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T11:15:17.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Reparation.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Modele\\Reparation.cs",
               "RelativeDocumentMoniker": "Modele\\Reparation.cs",
@@ -287,12 +347,11 @@
               "RelativeToolTip": "Modele\\Reparation.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAIwBEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T11:28:13.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T11:28:13.998Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Profile.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Modele\\Profile.cs",
               "RelativeDocumentMoniker": "Modele\\Profile.cs",
@@ -300,12 +359,11 @@
               "RelativeToolTip": "Modele\\Profile.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T19:01:22.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T19:01:22.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\EXample\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "EXample\\Form1.Designer.cs",
@@ -313,108 +371,88 @@
               "RelativeToolTip": "EXample\\Form1.Designer.cs",
               "ViewState": "AQIAAEMBAAAAAAAAAAAUwFEBAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T12:10:21.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T12:10:21.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "ucOperation.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucOperation.cs",
               "RelativeDocumentMoniker": "Vue\\ucOperation.cs",
               "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucOperation.cs [Design]",
               "RelativeToolTip": "Vue\\ucOperation.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T10:24:24.805Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-17T10:24:24.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "ucMateriel.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucMateriel.cs",
               "RelativeDocumentMoniker": "Vue\\ucMateriel.cs",
               "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucMateriel.cs [Design]",
               "RelativeToolTip": "Vue\\ucMateriel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T14:23:30.782Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-10T14:23:30.782Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "ucUtilisateur.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucUtilisateur.cs",
               "RelativeDocumentMoniker": "Vue\\ucUtilisateur.cs",
               "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucUtilisateur.cs [Design]",
               "RelativeToolTip": "Vue\\ucUtilisateur.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T10:53:39.462Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-17T10:53:39.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "ucTechnicien.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucTechnicien.cs",
               "RelativeDocumentMoniker": "Vue\\ucTechnicien.cs",
               "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucTechnicien.cs [Design]",
               "RelativeToolTip": "Vue\\ucTechnicien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T09:57:05.805Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-08T09:57:05.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "ucReparation.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucReparation.cs",
               "RelativeDocumentMoniker": "Vue\\ucReparation.cs",
               "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucReparation.cs [Design]",
               "RelativeToolTip": "Vue\\ucReparation.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T11:27:33.768Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-09T11:27:33.768Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "ucCompte.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucCompte.cs",
               "RelativeDocumentMoniker": "Vue\\ucCompte.cs",
               "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucCompte.cs [Design]",
               "RelativeToolTip": "Vue\\ucCompte.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T21:28:38.029Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-18T21:28:38.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "ucClient.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucClient.cs",
               "RelativeDocumentMoniker": "Vue\\ucClient.cs",
               "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucClient.cs [Design]",
               "RelativeToolTip": "Vue\\ucClient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T19:04:54.31Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-07T19:04:54.31Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ucBanque.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucBanque.cs",
-              "RelativeDocumentMoniker": "Vue\\ucBanque.cs",
-              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucBanque.cs [Design]",
-              "RelativeToolTip": "Vue\\ucBanque.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T12:47:31.867Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "ucBanque.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucBanque.Designer.cs",
               "RelativeDocumentMoniker": "Vue\\ucBanque.Designer.cs",
@@ -422,12 +460,11 @@
               "RelativeToolTip": "Vue\\ucBanque.Designer.cs",
               "ViewState": "AQIAANoAAAAAAAAAAAAUwOgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:20:40.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T10:20:40.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "ucOperation.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucOperation.Designer.cs",
               "RelativeDocumentMoniker": "Vue\\ucOperation.Designer.cs",
@@ -435,12 +472,11 @@
               "RelativeToolTip": "Vue\\ucOperation.Designer.cs",
               "ViewState": "AQIAAA4BAAAAAAAAAAAUwB4BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:18:08.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T10:18:08.533Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "ucCompte.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucCompte.Designer.cs",
               "RelativeDocumentMoniker": "Vue\\ucCompte.Designer.cs",
@@ -448,12 +484,11 @@
               "RelativeToolTip": "Vue\\ucCompte.Designer.cs",
               "ViewState": "AQIAAOIAAAAAAAAAAAAUwPAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:19:52.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T10:19:52.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Compte.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Modele\\Compte.cs",
               "RelativeDocumentMoniker": "Modele\\Compte.cs",
@@ -461,12 +496,11 @@
               "RelativeToolTip": "Modele\\Compte.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAgwBYAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T21:55:14.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T21:55:14.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "ucTechnicien.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucTechnicien.cs",
               "RelativeDocumentMoniker": "Vue\\ucTechnicien.cs",
@@ -474,12 +508,11 @@
               "RelativeToolTip": "Vue\\ucTechnicien.cs",
               "ViewState": "AQIAALkAAAAAAAAAAAAmwCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T09:57:19.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T09:57:19.997Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "ucOperation.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucOperation.cs",
               "RelativeDocumentMoniker": "Vue\\ucOperation.cs",
@@ -487,12 +520,11 @@
               "RelativeToolTip": "Vue\\ucOperation.cs",
               "ViewState": "AQIAAE0AAAAAAAAAAIA9wFoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T10:24:55.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T10:24:55.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "ucProfile.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucProfile.cs",
               "RelativeDocumentMoniker": "Vue\\ucProfile.cs",
@@ -500,12 +532,11 @@
               "RelativeToolTip": "Vue\\ucProfile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T12:34:56.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T12:34:56.119Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "ucBanque.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucBanque.cs",
               "RelativeDocumentMoniker": "Vue\\ucBanque.cs",
@@ -513,12 +544,11 @@
               "RelativeToolTip": "Vue\\ucBanque.cs",
               "ViewState": "AQIAAHYAAAAAAAAAAAAUwIgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T12:48:10.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T12:48:10.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "Techniciens.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Modele\\Techniciens.cs",
               "RelativeDocumentMoniker": "Modele\\Techniciens.cs",
@@ -530,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "ucMateriel.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucMateriel.cs",
               "RelativeDocumentMoniker": "Vue\\ucMateriel.cs",
@@ -538,12 +568,11 @@
               "RelativeToolTip": "Vue\\ucMateriel.cs",
               "ViewState": "AQIAAK0AAAAAAAAAAAAhwMUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T13:10:07.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T13:10:07.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "Banque.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Modele\\Banque.cs",
               "RelativeDocumentMoniker": "Modele\\Banque.cs",
@@ -555,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "Operation.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Modele\\Operation.cs",
               "RelativeDocumentMoniker": "Modele\\Operation.cs",
@@ -567,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "ucCompte.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucCompte.cs",
               "RelativeDocumentMoniker": "Vue\\ucCompte.cs",
@@ -575,23 +604,11 @@
               "RelativeToolTip": "Vue\\ucCompte.cs",
               "ViewState": "AQIAAC4AAAAAAAAAAADwvy4AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T21:28:45.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T21:28:45.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ucAuthentification.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucAuthentification.cs",
-              "RelativeDocumentMoniker": "Vue\\ucAuthentification.cs",
-              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucAuthentification.cs [Design]",
-              "RelativeToolTip": "Vue\\ucAuthentification.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T09:48:37.92Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "utilisateur.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Modele\\utilisateur.cs",
               "RelativeDocumentMoniker": "Modele\\utilisateur.cs",
@@ -603,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "ucClient.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucClient.cs",
               "RelativeDocumentMoniker": "Vue\\ucClient.cs",
@@ -611,24 +628,11 @@
               "RelativeToolTip": "Vue\\ucClient.cs",
               "ViewState": "AQIAANQAAAAAAAAAAAAAAOQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T19:04:56.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T19:04:56.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ucAuthentification.cs",
-              "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucAuthentification.cs",
-              "RelativeDocumentMoniker": "Vue\\ucAuthentification.cs",
-              "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucAuthentification.cs",
-              "RelativeToolTip": "Vue\\ucAuthentification.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAmwEAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T12:49:24.865Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "ucUtilisateur.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucUtilisateur.cs",
               "RelativeDocumentMoniker": "Vue\\ucUtilisateur.cs",
@@ -636,12 +640,11 @@
               "RelativeToolTip": "Vue\\ucUtilisateur.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAgwCMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T10:56:46.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T10:56:46.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\EXample\\Program.cs",
               "RelativeDocumentMoniker": "EXample\\Program.cs",
@@ -653,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "MethodUI.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\EXample\\MethodUI.cs",
               "RelativeDocumentMoniker": "EXample\\MethodUI.cs",
@@ -665,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "ucReparation.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucReparation.cs",
               "RelativeDocumentMoniker": "Vue\\ucReparation.cs",
@@ -673,12 +676,11 @@
               "RelativeToolTip": "Vue\\ucReparation.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAApwBsAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T12:13:54.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T12:13:54.756Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "Clients.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Modele\\Clients.cs",
               "RelativeDocumentMoniker": "Modele\\Clients.cs",
@@ -690,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "Materiel.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Modele\\Materiel.cs",
               "RelativeDocumentMoniker": "Modele\\Materiel.cs",
@@ -702,7 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "Personne.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Modele\\Personne.cs",
               "RelativeDocumentMoniker": "Modele\\Personne.cs",
@@ -714,7 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Vue\\Properties\\AssemblyInfo.cs",
@@ -726,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "ucMateriel.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Vue\\ucMateriel.Designer.cs",
               "RelativeDocumentMoniker": "Vue\\ucMateriel.Designer.cs",
@@ -734,8 +736,7 @@
               "RelativeToolTip": "Vue\\ucMateriel.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T07:32:08.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T07:32:08.562Z"
             }
           ]
         }

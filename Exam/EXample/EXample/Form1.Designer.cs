@@ -36,6 +36,7 @@
             this.buttonOperation = new System.Windows.Forms.Button();
             this.DashBoard = new System.Windows.Forms.Button();
             this.panelHeader = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panelBar = new System.Windows.Forms.Panel();
@@ -44,7 +45,6 @@
             this.buttonOperationMenu = new System.Windows.Forms.Button();
             this.buttonbuttonProfileMenu = new System.Windows.Forms.Button();
             this.buttonUtilisateurMenu = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelDashboard = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelHeader.SuspendLayout();
@@ -187,6 +187,13 @@
             this.panelHeader.Size = new System.Drawing.Size(220, 98);
             this.panelHeader.TabIndex = 0;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(218, 98);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1043, 537);
+            this.flowLayoutPanel1.TabIndex = 6;
+            // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(218, 3);
@@ -235,6 +242,7 @@
             this.buttonBanqueMenu.TabIndex = 8;
             this.buttonBanqueMenu.Text = "Banque";
             this.buttonBanqueMenu.UseVisualStyleBackColor = false;
+            this.buttonBanqueMenu.Click += new System.EventHandler(this.buttonBanqueMenu_Click_1);
             // 
             // buttonCompteMenu
             // 
@@ -247,6 +255,7 @@
             this.buttonCompteMenu.TabIndex = 7;
             this.buttonCompteMenu.Text = "Compte";
             this.buttonCompteMenu.UseVisualStyleBackColor = false;
+            this.buttonCompteMenu.Click += new System.EventHandler(this.buttonCompteMenu_Click_1);
             // 
             // buttonOperationMenu
             // 
@@ -259,6 +268,7 @@
             this.buttonOperationMenu.TabIndex = 6;
             this.buttonOperationMenu.Text = "Operation";
             this.buttonOperationMenu.UseVisualStyleBackColor = false;
+            this.buttonOperationMenu.Click += new System.EventHandler(this.buttonOperationMenu_Click_1);
             // 
             // buttonbuttonProfileMenu
             // 
@@ -271,6 +281,7 @@
             this.buttonbuttonProfileMenu.TabIndex = 5;
             this.buttonbuttonProfileMenu.Text = "Profile";
             this.buttonbuttonProfileMenu.UseVisualStyleBackColor = false;
+            this.buttonbuttonProfileMenu.Click += new System.EventHandler(this.buttonbuttonProfileMenu_Click);
             // 
             // buttonUtilisateurMenu
             // 
@@ -283,13 +294,7 @@
             this.buttonUtilisateurMenu.TabIndex = 4;
             this.buttonUtilisateurMenu.Text = "Utilisateur";
             this.buttonUtilisateurMenu.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(218, 98);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1043, 537);
-            this.flowLayoutPanel1.TabIndex = 6;
+            this.buttonUtilisateurMenu.Click += new System.EventHandler(this.buttonUtilisateurMenu_Click_1);
             // 
             // panelDashboard
             // 
@@ -298,6 +303,7 @@
             this.panelDashboard.Name = "panelDashboard";
             this.panelDashboard.Size = new System.Drawing.Size(1040, 532);
             this.panelDashboard.TabIndex = 6;
+            this.panelDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashboard_Paint_2);
             // 
             // Form1
             // 

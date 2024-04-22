@@ -287,7 +287,7 @@ namespace Controlleur
             {
                 profile1 = new  Profile();
 
-                profile1.Id = profilesReader["idProfile"].ToString();
+                profile1.Id = profilesReader["id"].ToString();
                 profile1.Nom = profilesReader["nom"].ToString();
                 profile1.Salaire = int.Parse(profilesReader["Salaire"].ToString());
 
@@ -801,7 +801,7 @@ namespace Controlleur
 
                 command.ExecuteNonQuery();
                 
-
+                /*
                 MySqlCommand command2 = conn.CreateCommand();
 
                 command2.CommandText = "UPDATE compte c"+
@@ -815,7 +815,7 @@ namespace Controlleur
 
                 command2.Parameters.Add(new MySqlParameter("@idOp", op1.IdOperation));
 
-                command2.ExecuteNonQuery();
+                command2.ExecuteNonQuery(); */
 
                 conn.Close();
             }

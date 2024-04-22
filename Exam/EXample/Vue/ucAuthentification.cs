@@ -44,7 +44,7 @@ namespace Vue
 
         private void buttonConnexion_Click(object sender, EventArgs e)
         {
-            string username = textBox2.Text;
+            string username = textBox1.Text;
             string pass = textBox2.Text;
             if (Factory.Connexion(username, pass) == true)
             {
