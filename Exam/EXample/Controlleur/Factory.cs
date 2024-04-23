@@ -801,21 +801,14 @@ namespace Controlleur
 
                 command.ExecuteNonQuery();
                 
-                /*
+                
                 MySqlCommand command2 = conn.CreateCommand();
 
-                command2.CommandText = "UPDATE compte c"+
-                        "SET c.solde = ("+
-                            "SELECT c.solde +"+
-                                "CASE WHEN o.TypeOperation = 'Retrait' THEN - o.Fond ELSE o.Fond END"+
-                            "FROM operation o" +
-                            "WHERE o.idCompte = c.idCompte" +
-                            ")"+
-                        "WHERE c.idCompte = @idOp";
+                command2.CommandText = "UPDATE compte c SET c.solde = (SELECT c.solde + CASE WHEN o.TypeOperation = 'Retrait' THEN - o.Fond ELSE o.Fond END FROM operation o WHERE o.idCompte = c.idCompte ) WHERE c.idCompte = @idCo";
 
-                command2.Parameters.Add(new MySqlParameter("@idOp", op1.IdOperation));
+                command2.Parameters.Add(new MySqlParameter("@idCo", op1.IdCompte));
 
-                command2.ExecuteNonQuery(); */
+                command2.ExecuteNonQuery(); 
 
                 conn.Close();
             }

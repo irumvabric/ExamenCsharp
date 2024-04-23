@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CD9DE15-939E-4101-880C-E2F6D10ECDC7}|Controlleur\\Controlleur.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\controlleur\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5CD9DE15-939E-4101-880C-E2F6D10ECDC7}|Controlleur\\Controlleur.csproj|c:\\users\\bigirimana\\source\\repos\\exam\\example\\controlleur\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CD9DE15-939E-4101-880C-E2F6D10ECDC7}|Controlleur\\Controlleur.csproj|solutionrelative:controlleur\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74C7524A-6509-4F97-84E8-D9C9AB3EB7A2}|EXample\\EXample.csproj|c:\\users\\bigirimana\\source\\repos\\exam\\example\\example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74C7524A-6509-4F97-84E8-D9C9AB3EB7A2}|EXample\\EXample.csproj|C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74C7524A-6509-4F97-84E8-D9C9AB3EB7A2}|EXample\\EXample.csproj|solutionrelative:example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -204,7 +204,7 @@
               "RelativeDocumentMoniker": "Controlleur\\Factory.cs",
               "ToolTip": "C:\\Users\\Bigirimana\\source\\repos\\Exam\\EXample\\Controlleur\\Factory.cs",
               "RelativeToolTip": "Controlleur\\Factory.cs",
-              "ViewState": "AQIAACIDAAAAAAAAAAAnwDgDAAAQAAAA",
+              "ViewState": "AQIAAAcDAAAAAAAAAAAswCQDAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T19:24:18.974Z",
               "IsPinned": true,
@@ -289,8 +289,7 @@
               "RelativeToolTip": "EXample\\Form1.cs",
               "ViewState": "AQIAAF8AAAAAAAAAAAAuwBcBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T14:00:29.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T14:00:29.985Z"
             },
             {
               "$type": "Document",
